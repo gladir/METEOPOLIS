@@ -3,7 +3,7 @@ METEOPOLIS - Ensemble de commande écrit en Pascal d'aide sur la météorologie.
 
 <h2>Liste des fichiers</h2>
 
-Voici la liste des diffÃ©rents fichiers proposÃ©s dans METEOPOLIS :
+Voici la liste des différents fichiers proposés dans METEOPOLIS :
 
 <table>
 	<tr>
