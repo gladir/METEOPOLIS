@@ -6,6 +6,8 @@
 
 Program TEMP;
 
+{$N+}
+
 Uses Strings;
 
 Type
@@ -18,11 +20,11 @@ Type
   Superficie:LongInt; { Km2 }
   Capital:PChar;
   AvgJanvier,AvgFevrier,AvgMars,AvgAvril,AvgMai,AvgJuin,AvgJuillet,
-  AvgAout,AvgSeptembre,AvgOctobre,AvgNovembre,AvgDecembre:Real;
+  AvgAout,AvgSeptembre,AvgOctobre,AvgNovembre,AvgDecembre:Single;
   MinJanvier,MinFevrier,MinMars,MinAvril,MinMai,MinJuin,MinJuillet,
-  MinAout,MinSeptembre,MinOctobre,MinNovembre,MinDecembre:Real;
+  MinAout,MinSeptembre,MinOctobre,MinNovembre,MinDecembre:Single;
   MaxJanvier,MaxFevrier,MaxMars,MaxAvril,MaxMai,MaxJuin,MaxJuillet,
-  MaxAout,MaxSeptembre,MaxOctobre,MaxNovembre,MaxDecembre:Real;
+  MaxAout,MaxSeptembre,MaxOctobre,MaxNovembre,MaxDecembre:Single;
  End;
 
 Const
@@ -49,31 +51,31 @@ Const
    AvgNovembre:   3.0;
    AvgDecembre:   -2.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    -4.0;
+   MinFevrier:    -2.0;
+   MinMars:       3.0;
+   MinAvril:      8.0;
+   MinMai:        12.0;
+   MinJuin:       17.0;
+   MinJuillet:    20.0;
+   MinAout:       19.0;
+   MinSeptembre:  15.0;
+   MinOctobre:    8.0;
+   MinNovembre:   2.0;
+   MinDecembre:   -2.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    7.0;
+   MaxFevrier:    8.0;
+   MaxMars:       14.0;
+   MaxAvril:      21.0;
+   MaxMai:        27.0;
+   MaxJuin:       32.0;
+   MaxJuillet:    34.0;
+   MaxAout:       33.0;
+   MaxSeptembre:  30.0;
+   MaxOctobre:    23.0;
+   MaxNovembre:   15.0;
+   MaxDecembre:   11.0
   ),
   (Country:       'Afrique du sud';
    Latitude:      28;
@@ -97,31 +99,31 @@ Const
    AvgNovembre:   22.8;
    AvgDecembre:   23.2;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    18.0;
+   MinFevrier:    18.0;
+   MinMars:       16.0;
+   MinAvril:      13.0;
+   MinMai:        8.0;
+   MinJuin:       5.0;
+   MinJuillet:    5.0;
+   MinAout:       8.0;
+   MinSeptembre:  12.0;
+   MinOctobre:    15.0;
+   MinNovembre:   16.0;
+   MinDecembre:   17.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    30.0;
+   MaxFevrier:    30.0;
+   MaxMars:       28.0;
+   MaxAvril:      26.0;
+   MaxMai:        24.0;
+   MaxJuin:       21.0;
+   MaxJuillet:    21.0;
+   MaxAout:       24.0;
+   MaxSeptembre:  28.0;
+   MaxOctobre:    29.0;
+   MaxNovembre:   30.0;
+   MaxDecembre:   30.0
   ),
   (Country:       'Albanie';
    Latitude:      41;
@@ -145,31 +147,31 @@ Const
    AvgNovembre:   12.6;
    AvgDecembre:   8.6;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    2.0;
+   MinFevrier:    3.0;
+   MinMars:       6.0;
+   MinAvril:      9.0;
+   MinMai:        13.0;
+   MinJuin:       17.0;
+   MinJuillet:    19.0;
+   MinAout:       18.0;
+   MinSeptembre:  15.0;
+   MinOctobre:    11.0;
+   MinNovembre:   7.0;
+   MinDecembre:   3.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    12.0;
+   MaxFevrier:    14.0;
+   MaxMars:       17.0;
+   MaxAvril:      20.0;
+   MaxMai:        25.0;
+   MaxJuin:       29.0;
+   MaxJuillet:    32.0;
+   MaxAout:       33.0;
+   MaxSeptembre:  28.0;
+   MaxOctobre:    23.0;
+   MaxNovembre:   18.0;
+   MaxDecembre:   14.0
   ),
   (Country:       'Algerie';
    Latitude:      28;
@@ -193,31 +195,31 @@ Const
    AvgNovembre:   15.5;
    AvgDecembre:   12.4;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    5.0;
+   MinFevrier:    5.0;
+   MinMars:       7.0;
+   MinAvril:      9.0;
+   MinMai:        12.0;
+   MinJuin:       16.0;
+   MinJuillet:    19.0;
+   MinAout:       20.0;
+   MinSeptembre:  18.0;
+   MinOctobre:    14.0;
+   MinNovembre:   10.0;
+   MinDecembre:   7.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    17.0;
+   MaxFevrier:    17.0;
+   MaxMars:       20.0;
+   MaxAvril:      22.0;
+   MaxMai:        25.0;
+   MaxJuin:       29.0;
+   MaxJuillet:    32.0;
+   MaxAout:       33.0;
+   MaxSeptembre:  30.0;
+   MaxOctobre:    27.0;
+   MaxNovembre:   21.0;
+   MaxDecembre:   18.0
   ),
   (Country:       'Allemagne';
    Latitude:      51;
@@ -241,31 +243,31 @@ Const
    AvgNovembre:   4.8;
    AvgDecembre:   1.6;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
+   MinJanvier:    -2.0;
+   MinFevrier:    -2.0;
    MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinAvril:      4.0;
+   MinMai:        8.0;
+   MinJuin:       12.0;
+   MinJuillet:    14.0;
+   MinAout:       14.0;
+   MinSeptembre:  10.0;
+   MinOctobre:    6.0;
+   MinNovembre:   2.0;
+   MinDecembre:   -1.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    3.0;
+   MaxFevrier:    5.0;
+   MaxMars:       9.0;
+   MaxAvril:      15.0;
+   MaxMai:        20.0;
+   MaxJuin:       23.0;
+   MaxJuillet:    25.0;
+   MaxAout:       25.0;
+   MaxSeptembre:  20.0;
+   MaxOctobre:    14.0;
+   MaxNovembre:   8.0;
+   MaxDecembre:   4.0
   ),
   (Country:       'Andorre';
    Latitude:      42;
@@ -289,31 +291,31 @@ Const
    AvgNovembre:   6.0;
    AvgDecembre:   2.5;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    -1.0;
+   MinFevrier:    -1.0;
+   MinMars:       2.0;
+   MinAvril:      4.0;
+   MinMai:        6.0;
+   MinJuin:       10.0;
+   MinJuillet:    12.0;
+   MinAout:       12.0;
+   MinSeptembre:  10.0;
+   MinOctobre:    6.0;
+   MinNovembre:   2.0;
+   MinDecembre:   -1.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    6.0;
+   MaxFevrier:    7.0;
+   MaxMars:       12.0;
+   MaxAvril:      14.0;
+   MaxMai:        17.0;
+   MaxJuin:       23.0;
+   MaxJuillet:    26.0;
+   MaxAout:       24.0;
+   MaxSeptembre:  22.0;
+   MaxOctobre:    16.0;
+   MaxNovembre:   10.0;
+   MaxDecembre:   6.0
   ),
   (Country:       'Angola';
    Latitude:      11;
@@ -337,31 +339,31 @@ Const
    AvgNovembre:   26.5;
    AvgDecembre:   26.8;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    24.0;
+   MinFevrier:    25.0;
+   MinMars:       25.0;
+   MinAvril:      25.0;
+   MinMai:        24.0;
+   MinJuin:       21.0;
+   MinJuillet:    19.0;
+   MinAout:       19.0;
+   MinSeptembre:  20.0;
+   MinOctobre:    23.0;
+   MinNovembre:   24.0;
+   MinDecembre:   24.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    30.0;
+   MaxFevrier:    31.0;
+   MaxMars:       31.0;
+   MaxAvril:      31.0;
+   MaxMai:        29.0;
+   MaxJuin:       27.0;
+   MaxJuillet:    25.0;
+   MaxAout:       25.0;
+   MaxSeptembre:  26.0;
+   MaxOctobre:    28.0;
+   MaxNovembre:   29.0;
+   MaxDecembre:   30.0
   ),
   (Country:       'Anguilla';
    Latitude:      18;
@@ -385,31 +387,31 @@ Const
    AvgNovembre:   27.6;
    AvgDecembre:   26.6;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    23.0;
+   MinFevrier:    23.0;
+   MinMars:       23.0;
+   MinAvril:      24.0;
+   MinMai:        25.0;
+   MinJuin:       26.0;
+   MinJuillet:    26.0;
+   MinAout:       26.0;
+   MinSeptembre:  26.0;
+   MinOctobre:    26.0;
+   MinNovembre:   25.0;
+   MinDecembre:   24.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    29.0;
+   MaxFevrier:    29.0;
+   MaxMars:       29.0;
+   MaxAvril:      30.0;
+   MaxMai:        30.0;
+   MaxJuin:       31.0;
+   MaxJuillet:    31.0;
+   MaxAout:       32.0;
+   MaxSeptembre:  32.0;
+   MaxOctobre:    31.0;
+   MaxNovembre:   30.0;
+   MaxDecembre:   29.0
   ),
   (Country:       'Antarctique';
    Latitude:      75;
@@ -433,31 +435,31 @@ Const
    AvgNovembre:   -38.2;
    AvgDecembre:   -27.7;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    -30.0;
+   MinFevrier:    -43.0;
+   MinMars:       -57.0;
+   MinAvril:      -61.0;
+   MinMai:        -62.0;
+   MinJuin:       -63.0;
+   MinJuillet:    -63.0;
+   MinAout:       -63.0;
+   MinSeptembre:  -62.0;
+   MinOctobre:    -54.0;
+   MinNovembre:   -40.0;
+   MinDecembre:   -29.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    -26.0;
+   MaxFevrier:    -38.0;
+   MaxMars:       -50.0;
+   MaxAvril:      -53.0;
+   MaxMai:        -54.0;
+   MaxJuin:       -54.0;
+   MaxJuillet:    -55.0;
+   MaxAout:       -55.0;
+   MaxSeptembre:  -54.0;
+   MaxOctobre:    -48.0;
+   MaxNovembre:   -36.0;
+   MaxDecembre:   -26.0
   ),
   (Country:       'Antigua et Barbuda';
    Latitude:      17;
@@ -481,31 +483,31 @@ Const
    AvgNovembre:   26.9;
    AvgDecembre:   26.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    22.0;
+   MinFevrier:    22.0;
+   MinMars:       23.0;
+   MinAvril:      23.0;
+   MinMai:        24.0;
+   MinJuin:       25.0;
+   MinJuillet:    25.0;
+   MinAout:       25.0;
+   MinSeptembre:  25.0;
+   MinOctobre:    24.0;
+   MinNovembre:   24.0;
+   MinDecembre:   23.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    28.0;
+   MaxFevrier:    28.0;
+   MaxMars:       29.0;
+   MaxAvril:      30.0;
+   MaxMai:        30.0;
+   MaxJuin:       31.0;
+   MaxJuillet:    31.0;
+   MaxAout:       31.0;
+   MaxSeptembre:  31.0;
+   MaxOctobre:    31.0;
+   MaxNovembre:   30.0;
+   MaxDecembre:   29.0
   ),
   (Country:       'Arabie saoudite';
    Latitude:      23;
@@ -529,31 +531,31 @@ Const
    AvgNovembre:   20.4;
    AvgDecembre:   15.6;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    7.0;
+   MinFevrier:    10.0;
+   MinMars:       14.0;
+   MinAvril:      19.0;
+   MinMai:        24.0;
+   MinJuin:       26.0;
+   MinJuillet:    27.0;
+   MinAout:       27.0;
+   MinSeptembre:  24.0;
+   MinOctobre:    19.0;
+   MinNovembre:   13.0;
+   MinDecembre:   9.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    21.0;
+   MaxFevrier:    24.0;
+   MaxMars:       28.0;
+   MaxAvril:      34.0;
+   MaxMai:        39.0;
+   MaxJuin:       43.0;
+   MaxJuillet:    44.0;
+   MaxAout:       44.0;
+   MaxSeptembre:  41.0;
+   MaxOctobre:    36.0;
+   MaxNovembre:   27.0;
+   MaxDecembre:   22.0
   ),
   (Country:       'Argentine';
    Latitude:      38;
@@ -577,31 +579,31 @@ Const
    AvgNovembre:   21.0;
    AvgDecembre:   23.8;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    20.0;
+   MinFevrier:    19.0;
+   MinMars:       18.0;
+   MinAvril:      14.0;
+   MinMai:        11.0;
+   MinJuin:       8.0;
+   MinJuillet:    7.0;
+   MinAout:       9.0;
+   MinSeptembre:  11.0;
+   MinOctobre:    14.0;
+   MinNovembre:   16.0;
+   MinDecembre:   19.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    30.0;
+   MaxFevrier:    29.0;
+   MaxMars:       27.0;
+   MaxAvril:      23.0;
+   MaxMai:        19.0;
+   MaxJuin:       16.0;
+   MaxJuillet:    15.0;
+   MaxAout:       18.0;
+   MaxSeptembre:  20.0;
+   MaxOctobre:    22.0;
+   MaxNovembre:   26.0;
+   MaxDecembre:   29.0
   ),
   (Country:       'Armenie';
    Latitude:      40;
@@ -625,31 +627,31 @@ Const
    AvgNovembre:   6.6;
    AvgDecembre:   0.6;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
+   MinJanvier:    -8.0;
+   MinFevrier:    -5.0;
+   MinMars:       1.0;
+   MinAvril:      6.0;
+   MinMai:        11.0;
+   MinJuin:       15.0;
+   MinJuillet:    19.0;
+   MinAout:       19.0;
+   MinSeptembre:  13.0;
+   MinOctobre:    7.0;
    MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinDecembre:   -5.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    2.0;
+   MaxFevrier:    6.0;
+   MaxMars:       14.0;
+   MaxAvril:      20.0;
+   MaxMai:        25.0;
+   MaxJuin:       31.0;
+   MaxJuillet:    34.0;
+   MaxAout:       34.0;
+   MaxSeptembre:  29.0;
+   MaxOctobre:    22.0;
+   MaxNovembre:   13.0;
+   MaxDecembre:   4.0
   ),
   (Country:       'Aruba';
    Latitude:      12;
@@ -673,31 +675,31 @@ Const
    AvgNovembre:   28.8;
    AvgDecembre:   28.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    25.0;
+   MinFevrier:    25.0;
+   MinMars:       25.0;
+   MinAvril:      26.0;
+   MinMai:        27.0;
+   MinJuin:       27.0;
+   MinJuillet:    27.0;
+   MinAout:       27.0;
+   MinSeptembre:  27.0;
+   MinOctobre:    27.0;
+   MinNovembre:   26.0;
+   MinDecembre:   25.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    30.0;
+   MaxFevrier:    31.0;
+   MaxMars:       31.0;
+   MaxAvril:      32.0;
+   MaxMai:        32.0;
+   MaxJuin:       32.0;
+   MaxJuillet:    32.0;
+   MaxAout:       33.0;
+   MaxSeptembre:  33.0;
+   MaxOctobre:    32.0;
+   MaxNovembre:   32.0;
+   MaxDecembre:   31.0
   ),
   (Country:       'Australie';
    Latitude:      26;
@@ -721,31 +723,31 @@ Const
    AvgNovembre:   16.5;
    AvgDecembre:   19.3;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
+   MinJanvier:    14.0;
+   MinFevrier:    14.0;
+   MinMars:       11.0;
+   MinAvril:      7.0;
+   MinMai:        3.0;
+   MinJuin:       2.0;
    MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinAout:       1.0;
+   MinSeptembre:  4.0;
+   MinOctobre:    7.0;
+   MinNovembre:   10.0;
+   MinDecembre:   12.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    29.0;
+   MaxFevrier:    28.0;
+   MaxMars:       25.0;
+   MaxAvril:      21.0;
+   MaxMai:        17.0;
+   MaxJuin:       13.0;
+   MaxJuillet:    12.0;
+   MaxAout:       14.0;
+   MaxSeptembre:  17.0;
+   MaxOctobre:    20.0;
+   MaxNovembre:   23.0;
+   MaxDecembre:   26.0
   ),
   (Country:       'Autriche';
    Latitude:      47;
@@ -769,31 +771,31 @@ Const
    AvgNovembre:   5.5;
    AvgDecembre:   1.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    -3.0;
+   MinFevrier:    -2.0;
+   MinMars:       1.0;
+   MinAvril:      5.0;
+   MinMai:        10.0;
+   MinJuin:       14.0;
+   MinJuillet:    15.0;
+   MinAout:       15.0;
+   MinSeptembre:  11.0;
+   MinOctobre:    6.0;
+   MinNovembre:   2.0;
+   MinDecembre:   -2.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    3.0;
+   MaxFevrier:    6.0;
+   MaxMars:       11.0;
+   MaxAvril:      16.0;
+   MaxMai:        21.0;
+   MaxJuin:       25.0;
+   MaxJuillet:    27.0;
+   MaxAout:       26.0;
+   MaxSeptembre:  21.0;
+   MaxOctobre:    15.0;
+   MaxNovembre:   9.0;
+   MaxDecembre:   4.0
   ),
   (Country:       'Azerbaidjan';
    Latitude:      40;
@@ -804,44 +806,44 @@ Const
    LongDirection: 'E';
    Superficie:    86600;
    Capital:       'Bakou';
-   AvgJanvier:    4.5;
-   AvgFevrier:    4.0;
-   AvgMars:       7.0;
-   AvgAvril:      12.5;
-   AvgMai:        18.5;
-   AvgJuin:       23.5;
-   AvgJuillet:    26.5;
-   AvgAout:       26.5;
-   AvgSeptembre:  22.5;
-   AvgOctobre:    17.0;
-   AvgNovembre:   11.5;
-   AvgDecembre:   7.5;
+   AvgJanvier:    4.8;
+   AvgFevrier:    5.1;
+   AvgMars:       7.8;
+   AvgAvril:      11.9;
+   AvgMai:        18.6;
+   AvgJuin:       23.7;
+   AvgJuillet:    26.6;
+   AvgAout:       26.6;
+   AvgSeptembre:  22.4;
+   AvgOctobre:    16.6;
+   AvgNovembre:   10.8;
+   AvgDecembre:   6.8;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    2.0;
+   MinFevrier:    2.0;
+   MinMars:       4.0;
+   MinAvril:      8.0;
+   MinMai:        14.0;
+   MinJuin:       19.0;
+   MinJuillet:    22.0;
+   MinAout:       22.0;
+   MinSeptembre:  18.0;
+   MinOctobre:    13.0;
+   MinNovembre:   8.0;
+   MinDecembre:   4.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    8.0;
+   MaxFevrier:    8.0;
+   MaxMars:       11.0;
+   MaxAvril:      16.0;
+   MaxMai:        23.0;
+   MaxJuin:       29.0;
+   MaxJuillet:    31.0;
+   MaxAout:       32.0;
+   MaxSeptembre:  27.0;
+   MaxOctobre:    20.0;
+   MaxNovembre:   14.0;
+   MaxDecembre:   10.0
   ),
   (Country:       'Bahamas';
    Latitude:      24;
@@ -865,31 +867,31 @@ Const
    AvgNovembre:   25.0;
    AvgDecembre:   23.5;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    18.0;
+   MinFevrier:    19.0;
+   MinMars:       19.0;
+   MinAvril:      21.0;
+   MinMai:        22.0;
+   MinJuin:       24.0;
+   MinJuillet:    25.0;
+   MinAout:       25.0;
+   MinSeptembre:  25.0;
+   MinOctobre:    24.0;
+   MinNovembre:   21.0;
+   MinDecembre:   20.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    27.0;
+   MaxFevrier:    27.0;
+   MaxMars:       28.0;
+   MaxAvril:      29.0;
+   MaxMai:        30.0;
+   MaxJuin:       32.0;
+   MaxJuillet:    33.0;
+   MaxAout:       33.0;
+   MaxSeptembre:  32.0;
+   MaxOctobre:    31.0;
+   MaxNovembre:   29.0;
+   MaxDecembre:   27.0
   ),
   (Country:       'Bahrein';
    Latitude:      26;
@@ -913,31 +915,31 @@ Const
    AvgNovembre:   24.8;
    AvgDecembre:   19.9;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    15.0;
+   MinFevrier:    16.0;
+   MinMars:       18.0;
+   MinAvril:      23.0;
+   MinMai:        27.0;
+   MinJuin:       30.0;
+   MinJuillet:    32.0;
+   MinAout:       32.0;
+   MinSeptembre:  30.0;
+   MinOctobre:    27.0;
+   MinNovembre:   22.0;
+   MinDecembre:   17.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    21.0;
+   MaxFevrier:    22.0;
+   MaxMars:       25.0;
+   MaxAvril:      31.0;
+   MaxMai:        36.0;
+   MaxJuin:       39.0;
+   MaxJuillet:    40.0;
+   MaxAout:       39.0;
+   MaxSeptembre:  38.0;
+   MaxOctobre:    34.0;
+   MaxNovembre:   28.0;
+   MaxDecembre:   23.0
   ),
   (Country:       'Bangladesh';
    Latitude:      23;
@@ -961,31 +963,31 @@ Const
    AvgNovembre:   25.4;
    AvgDecembre:   21.2;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    15.0;
+   MinFevrier:    18.0;
+   MinMars:       22.0;
+   MinAvril:      25.0;
+   MinMai:        26.0;
+   MinJuin:       27.0;
+   MinJuillet:    27.0;
+   MinAout:       27.0;
+   MinSeptembre:  27.0;
+   MinOctobre:    25.0;
+   MinNovembre:   21.0;
+   MinDecembre:   17.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    25.0;
+   MaxFevrier:    28.0;
+   MaxMars:       32.0;
+   MaxAvril:      34.0;
+   MaxMai:        33.0;
+   MaxJuin:       32.0;
+   MaxJuillet:    32.0;
+   MaxAout:       32.0;
+   MaxSeptembre:  32.0;
+   MaxOctobre:    31.0;
+   MaxNovembre:   29.0;
+   MaxDecembre:   26.0
   ),
   (Country:       'Barbade';
    Latitude:      13;
@@ -1009,31 +1011,31 @@ Const
    AvgNovembre:   27.4;
    AvgDecembre:   26.8;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    23.0;
+   MinFevrier:    23.0;
+   MinMars:       23.0;
+   MinAvril:      24.0;
+   MinMai:        25.0;
+   MinJuin:       25.0;
+   MinJuillet:    25.0;
+   MinAout:       25.0;
+   MinSeptembre:  25.0;
+   MinOctobre:    25.0;
+   MinNovembre:   24.0;
+   MinDecembre:   24.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    29.0;
+   MaxFevrier:    29.0;
+   MaxMars:       30.0;
+   MaxAvril:      30.0;
+   MaxMai:        31.0;
+   MaxJuin:       31.0;
+   MaxJuillet:    31.0;
+   MaxAout:       31.0;
+   MaxSeptembre:  31.0;
+   MaxOctobre:    31.0;
+   MaxNovembre:   30.0;
+   MaxDecembre:   30.0
   ),
   (Country:       'Belgique';
    Latitude:      50;
@@ -1057,31 +1059,31 @@ Const
    AvgNovembre:   7.2;
    AvgDecembre:   4.3;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    1.0;
+   MinFevrier:    1.0;
+   MinMars:       3.0;
+   MinAvril:      5.0;
+   MinMai:        8.0;
+   MinJuin:       11.0;
+   MinJuillet:    13.0;
+   MinAout:       13.0;
+   MinSeptembre:  11.0;
+   MinOctobre:    8.0;
+   MinNovembre:   4.0;
+   MinDecembre:   2.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    6.0;
+   MaxFevrier:    7.0;
+   MaxMars:       11.0;
+   MaxAvril:      15.0;
+   MaxMai:        18.0;
+   MaxJuin:       21.0;
+   MaxJuillet:    24.0;
+   MaxAout:       23.0;
+   MaxSeptembre:  20.0;
+   MaxOctobre:    15.0;
+   MaxNovembre:   10.0;
+   MaxDecembre:   7.0
   ),
   (Country:       'Belize';
    Latitude:      17;
@@ -1105,31 +1107,31 @@ Const
    AvgNovembre:   24.4;
    AvgDecembre:   23.5;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    18.0;
+   MinFevrier:    18.0;
+   MinMars:       19.0;
+   MinAvril:      20.0;
+   MinMai:        22.0;
+   MinJuin:       23.0;
+   MinJuillet:    22.0;
+   MinAout:       22.0;
+   MinSeptembre:  22.0;
+   MinOctobre:    21.0;
+   MinNovembre:   20.0;
+   MinDecembre:   19.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    28.0;
+   MaxFevrier:    29.0;
+   MaxMars:       31.0;
+   MaxAvril:      33.0;
+   MaxMai:        34.0;
+   MaxJuin:       32.0;
+   MaxJuillet:    32.0;
+   MaxAout:       32.0;
+   MaxSeptembre:  32.0;
+   MaxOctobre:    31.0;
+   MaxNovembre:   29.0;
+   MaxDecembre:   28.0
   ),
   (Country:       'Benin';
    Latitude:      9;
@@ -1153,31 +1155,31 @@ Const
    AvgNovembre:   28.4;
    AvgDecembre:   28.5;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    24.0;
+   MinFevrier:    26.0;
+   MinMars:       27.0;
+   MinAvril:      26.0;
+   MinMai:        25.0;
+   MinJuin:       24.0;
+   MinJuillet:    24.0;
+   MinAout:       24.0;
+   MinSeptembre:  24.0;
+   MinOctobre:    25.0;
+   MinNovembre:   25.0;
+   MinDecembre:   25.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    32.0;
+   MaxFevrier:    32.0;
+   MaxMars:       32.0;
+   MaxAvril:      32.0;
+   MaxMai:        31.0;
+   MaxJuin:       30.0;
+   MaxJuillet:    29.0;
+   MaxAout:       28.0;
+   MaxSeptembre:  29.0;
+   MaxOctobre:    30.0;
+   MaxNovembre:   32.0;
+   MaxDecembre:   32.0
   ),
   (Country:       'Bermudes';
    Latitude:      32;
@@ -1201,31 +1203,31 @@ Const
    AvgNovembre:   21.7;
    AvgDecembre:   19.6;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    16.0;
+   MinFevrier:    15.0;
+   MinMars:       15.0;
+   MinAvril:      17.0;
+   MinMai:        19.0;
+   MinJuin:       22.0;
+   MinJuillet:    24.0;
+   MinAout:       25.0;
+   MinSeptembre:  24.0;
+   MinOctobre:    22.0;
+   MinNovembre:   19.0;
+   MinDecembre:   17.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    21.0;
+   MaxFevrier:    21.0;
+   MaxMars:       21.0;
+   MaxAvril:      23.0;
+   MaxMai:        25.0;
+   MaxJuin:       27.0;
+   MaxJuillet:    30.0;
+   MaxAout:       30.0;
+   MaxSeptembre:  29.0;
+   MaxOctobre:    27.0;
+   MaxNovembre:   24.0;
+   MaxDecembre:   24.0
   ),
   (Country:       'Bhutan';
    Latitude:      27;
@@ -1249,31 +1251,31 @@ Const
    AvgNovembre:   11.5;
    AvgDecembre:   7.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    -3.0;
+   MinFevrier:    1.0;
+   MinMars:       4.0;
+   MinAvril:      7.0;
+   MinMai:        13.0;
+   MinJuin:       15.0;
+   MinJuillet:    15.0;
+   MinAout:       16.0;
+   MinSeptembre:  15.0;
+   MinOctobre:    10.0;
+   MinNovembre:   5.0;
+   MinDecembre:   -1.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    12.0;
+   MaxFevrier:    14.0;
+   MaxMars:       16.0;
+   MaxAvril:      20.0;
+   MaxMai:        23.0;
+   MaxJuin:       24.0;
+   MaxJuillet:    25.0;
+   MaxAout:       25.0;
+   MaxSeptembre:  23.0;
+   MaxOctobre:    22.0;
+   MaxNovembre:   18.0;
+   MaxDecembre:   15.0
   ),
   (Country:       'Bielorussie';
    Latitude:      53;
@@ -1297,31 +1299,31 @@ Const
    AvgNovembre:   1.4;
    AvgDecembre:   -2.7;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    -6.0;
+   MinFevrier:    -6.0;
+   MinMars:       -3.0;
+   MinAvril:      3.0;
+   MinMai:        8.0;
+   MinJuin:       12.0;
+   MinJuillet:    15.0;
+   MinAout:       14.0;
+   MinSeptembre:  9.0;
+   MinOctobre:    4.0;
+   MinNovembre:   -1.0;
+   MinDecembre:   -5.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    -2.0;
+   MaxFevrier:    -1.0;
+   MaxMars:       4.0;
+   MaxAvril:      13.0;
+   MaxMai:        19.0;
+   MaxJuin:       22.0;
+   MaxJuillet:    24.0;
+   MaxAout:       24.0;
+   MaxSeptembre:  17.0;
+   MaxOctobre:    10.0;
+   MaxNovembre:   3.0;
+   MaxDecembre:   -1.0
   ),
   (Country:       'Bolivie';
    Latitude:      16;
@@ -1345,31 +1347,31 @@ Const
    AvgNovembre:   16.2;
    AvgDecembre:   16.3;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    11.0;
+   MinFevrier:    11.0;
+   MinMars:       10.0;
+   MinAvril:      9.0;
+   MinMai:        7.0;
+   MinJuin:       5.0;
+   MinJuillet:    5.0;
+   MinAout:       6.0;
+   MinSeptembre:  8.0;
+   MinOctobre:    10.0;
+   MinNovembre:   10.0;
+   MinDecembre:   11.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    21.0;
+   MaxFevrier:    20.0;
+   MaxMars:       20.0;
+   MaxAvril:      21.0;
+   MaxMai:        21.0;
+   MaxJuin:       20.0;
+   MaxJuillet:    20.0;
+   MaxAout:       21.0;
+   MaxSeptembre:  22.0;
+   MaxOctobre:    22.0;
+   MaxNovembre:   22.0;
+   MaxDecembre:   22.0
   ),
   (Country:       'Bonaire';
    Latitude:      12;
@@ -1393,31 +1395,31 @@ Const
    AvgNovembre:   28.9;
    AvgDecembre:   28.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    25.0;
+   MinFevrier:    25.0;
+   MinMars:       25.0;
+   MinAvril:      26.0;
+   MinMai:        27.0;
+   MinJuin:       27.0;
+   MinJuillet:    27.0;
+   MinAout:       27.0;
+   MinSeptembre:  28.0;
+   MinOctobre:    27.0;
+   MinNovembre:   26.0;
+   MinDecembre:   26.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    30.0;
+   MaxFevrier:    30.0;
+   MaxMars:       31.0;
+   MaxAvril:      31.0;
+   MaxMai:        32.0;
+   MaxJuin:       32.0;
+   MaxJuillet:    32.0;
+   MaxAout:       33.0;
+   MaxSeptembre:  33.0;
+   MaxOctobre:    32.0;
+   MaxNovembre:   32.0;
+   MaxDecembre:   31.0
   ),
   (Country:       'Bosnie-Herzegovine';
    Latitude:      43;
@@ -1441,31 +1443,31 @@ Const
    AvgNovembre:   6.0;
    AvgDecembre:   0.5;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    -4.0;
+   MinFevrier:    -2.0;
+   MinMars:       1.0;
+   MinAvril:      4.0;
+   MinMai:        9.0;
+   MinJuin:       11.0;
+   MinJuillet:    13.0;
+   MinAout:       13.0;
+   MinSeptembre:  10.0;
+   MinOctobre:    6.0;
+   MinNovembre:   2.0;
+   MinDecembre:   -3.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    3.0;
+   MaxFevrier:    6.0;
+   MaxMars:       10.0;
+   MaxAvril:      15.0;
+   MaxMai:        20.0;
+   MaxJuin:       23.0;
+   MaxJuillet:    26.0;
+   MaxAout:       26.0;
+   MaxSeptembre:  22.0;
+   MaxOctobre:    17.0;
+   MaxNovembre:   10.0;
+   MaxDecembre:   4.0
   ),
   (Country:       'Botswana';
    Latitude:      22;
@@ -1489,31 +1491,31 @@ Const
    AvgNovembre:   25.1;
    AvgDecembre:   25.7;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    20.0;
+   MinFevrier:    19.0;
+   MinMars:       18.0;
+   MinAvril:      13.0;
+   MinMai:        8.0;
+   MinJuin:       5.0;
+   MinJuillet:    4.0;
+   MinAout:       7.0;
+   MinSeptembre:  12.0;
+   MinOctobre:    16.0;
+   MinNovembre:   18.0;
+   MinDecembre:   19.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    32.0;
+   MaxFevrier:    32.0;
+   MaxMars:       31.0;
+   MaxAvril:      28.0;
+   MaxMai:        26.0;
+   MaxJuin:       23.0;
+   MaxJuillet:    23.0;
+   MaxAout:       26.0;
+   MaxSeptembre:  30.0;
+   MaxOctobre:    32.0;
+   MaxNovembre:   32.0;
+   MaxDecembre:   32.0
   ),
   (Country:       'Bresil';
    Latitude:      14;
@@ -1537,31 +1539,31 @@ Const
    AvgNovembre:   23.6;
    AvgDecembre:   23.5;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    19.0;
+   MinFevrier:    18.0;
+   MinMars:       18.0;
+   MinAvril:      18.0;
+   MinMai:        15.0;
+   MinJuin:       13.0;
+   MinJuillet:    12.0;
+   MinAout:       13.0;
+   MinSeptembre:  16.0;
+   MinOctobre:    18.0;
+   MinNovembre:   19.0;
+   MinDecembre:   19.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    28.0;
+   MaxFevrier:    29.0;
+   MaxMars:       28.0;
+   MaxAvril:      28.0;
+   MaxMai:        27.0;
+   MaxJuin:       27.0;
+   MaxJuillet:    27.0;
+   MaxAout:       29.0;
+   MaxSeptembre:  30.0;
+   MaxOctobre:    30.0;
+   MaxNovembre:   29.0;
+   MaxDecembre:   28.0
   ),
   (Country:       'Brunei Darussalam';
    Latitude:      4;
@@ -1585,31 +1587,31 @@ Const
    AvgNovembre:   27.0;
    AvgDecembre:   27.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    24.0;
+   MinFevrier:    24.0;
+   MinMars:       25.0;
+   MinAvril:      25.0;
+   MinMai:        25.0;
+   MinJuin:       24.0;
+   MinJuillet:    24.0;
+   MinAout:       24.0;
+   MinSeptembre:  24.0;
+   MinOctobre:    24.0;
+   MinNovembre:   24.0;
+   MinDecembre:   24.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    30.0;
+   MaxFevrier:    30.0;
+   MaxMars:       31.0;
+   MaxAvril:      32.0;
+   MaxMai:        32.0;
+   MaxJuin:       32.0;
+   MaxJuillet:    32.0;
+   MaxAout:       32.0;
+   MaxSeptembre:  32.0;
+   MaxOctobre:    31.0;
+   MaxNovembre:   31.0;
+   MaxDecembre:   31.0
   ),
   (Country:       'Bulgarie';
    Latitude:      42;
@@ -1633,31 +1635,31 @@ Const
    AvgNovembre:   6.0;
    AvgDecembre:   0.7;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
+   MinJanvier:    -6.0;
+   MinFevrier:    -4.0;
    MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinAvril:      4.0;
+   MinMai:        9.0;
+   MinJuin:       13.0;
+   MinJuillet:    14.0;
+   MinAout:       14.0;
+   MinSeptembre:  10.0;
+   MinOctobre:    5.0;
+   MinNovembre:   1.0;
+   MinDecembre:   -4.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    4.0;
+   MaxFevrier:    7.0;
+   MaxMars:       12.0;
+   MaxAvril:      17.0;
+   MaxMai:        22.0;
+   MaxJuin:       26.0;
+   MaxJuillet:    29.0;
+   MaxAout:       29.0;
+   MaxSeptembre:  24.0;
+   MaxOctobre:    18.0;
+   MaxNovembre:   11.0;
+   MaxDecembre:   5.0
   ),
   (Country:       'Burkina Faso';
    Latitude:      12;
@@ -1681,31 +1683,31 @@ Const
    AvgNovembre:   28.6;
    AvgDecembre:   26.1;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    18.0;
+   MinFevrier:    20.0;
+   MinMars:       25.0;
+   MinAvril:      27.0;
+   MinMai:        27.0;
+   MinJuin:       25.0;
+   MinJuillet:    23.0;
+   MinAout:       23.0;
+   MinSeptembre:  23.0;
+   MinOctobre:    24.0;
+   MinNovembre:   21.0;
+   MinDecembre:   18.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    33.0;
+   MaxFevrier:    36.0;
+   MaxMars:       39.0;
+   MaxAvril:      40.0;
+   MaxMai:        38.0;
+   MaxJuin:       35.0;
+   MaxJuillet:    33.0;
+   MaxAout:       31.0;
+   MaxSeptembre:  33.0;
+   MaxOctobre:    36.0;
+   MaxNovembre:   37.0;
+   MaxDecembre:   34.0
   ),
   (Country:       'Burundi';
    Latitude:      3;
@@ -1729,31 +1731,31 @@ Const
    AvgNovembre:   24.0;
    AvgDecembre:   24.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    19.0;
+   MinFevrier:    19.0;
+   MinMars:       19.0;
+   MinAvril:      20.0;
+   MinMai:        19.0;
+   MinJuin:       18.0;
+   MinJuillet:    17.0;
+   MinAout:       17.0;
+   MinSeptembre:  19.0;
+   MinOctobre:    19.0;
+   MinNovembre:   19.0;
+   MinDecembre:   19.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    29.0;
+   MaxFevrier:    30.0;
+   MaxMars:       29.0;
+   MaxAvril:      29.0;
+   MaxMai:        30.0;
+   MaxJuin:       30.0;
+   MaxJuillet:    29.0;
+   MaxAout:       30.0;
+   MaxSeptembre:  31.0;
+   MaxOctobre:    30.0;
+   MaxNovembre:   29.0;
+   MaxDecembre:   29.0
   ),
   (Country:       'Cambodge';
    Latitude:      12;
@@ -1777,31 +1779,31 @@ Const
    AvgNovembre:   26.5;
    AvgDecembre:   26.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    22.0;
+   MinFevrier:    23.0;
+   MinMars:       24.0;
+   MinAvril:      25.0;
+   MinMai:        25.0;
+   MinJuin:       25.0;
+   MinJuillet:    25.0;
+   MinAout:       25.0;
+   MinSeptembre:  24.0;
+   MinOctobre:    24.0;
+   MinNovembre:   23.0;
+   MinDecembre:   22.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    32.0;
+   MaxFevrier:    33.0;
+   MaxMars:       35.0;
+   MaxAvril:      35.0;
+   MaxMai:        34.0;
+   MaxJuin:       34.0;
+   MaxJuillet:    33.0;
+   MaxAout:       33.0;
+   MaxSeptembre:  32.0;
+   MaxOctobre:    31.0;
+   MaxNovembre:   30.0;
+   MaxDecembre:   30.0
   ),
   (Country:       'Cameroun';
    Latitude:      7;
@@ -1825,31 +1827,31 @@ Const
    AvgNovembre:   24.5;
    AvgDecembre:   24.4;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    20.0;
+   MinFevrier:    21.0;
+   MinMars:       21.0;
+   MinAvril:      20.0;
+   MinMai:        20.0;
+   MinJuin:       20.0;
+   MinJuillet:    20.0;
+   MinAout:       20.0;
+   MinSeptembre:  20.0;
+   MinOctobre:    20.0;
+   MinNovembre:   20.0;
+   MinDecembre:   20.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    30.0;
+   MaxFevrier:    31.0;
+   MaxMars:       30.0;
+   MaxAvril:      30.0;
+   MaxMai:        29.0;
+   MaxJuin:       27.0;
+   MaxJuillet:    26.0;
+   MaxAout:       26.0;
+   MaxSeptembre:  27.0;
+   MaxOctobre:    28.0;
+   MaxNovembre:   29.0;
+   MaxDecembre:   29.0
   ),
   (Country:       'Canada';
    Latitude:      62;
@@ -1873,31 +1875,31 @@ Const
    AvgNovembre:   1.8;
    AvgDecembre:   -5.2;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    -14.0;
+   MinFevrier:    -13.0;
+   MinMars:       -7.0;
+   MinAvril:      1.0;
+   MinMai:        8.0;
+   MinJuin:       13.0;
+   MinJuillet:    16.0;
+   MinAout:       14.0;
+   MinSeptembre:  10.0;
+   MinOctobre:    4.0;
+   MinNovembre:   -2.0;
+   MinDecembre:   -9.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    -5.0;
+   MaxFevrier:    -3.0;
+   MaxMars:       3.0;
+   MaxAvril:      11.0;
+   MaxMai:        20.0;
+   MaxJuin:       24.0;
+   MaxJuillet:    27.0;
+   MaxAout:       26.0;
+   MaxSeptembre:  21.0;
+   MaxOctobre:    13.0;
+   MaxNovembre:   6.0;
+   MaxDecembre:   -1.0
   ),
   (Country:       'Cap-Vert';
    Latitude:      16;
@@ -1921,31 +1923,31 @@ Const
    AvgNovembre:   25.0;
    AvgDecembre:   23.4;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    19.0;
+   MinFevrier:    20.0;
+   MinMars:       20.0;
+   MinAvril:      19.0;
+   MinMai:        21.0;
+   MinJuin:       22.0;
+   MinJuillet:    23.0;
+   MinAout:       24.0;
+   MinSeptembre:  24.0;
+   MinOctobre:    24.0;
+   MinNovembre:   22.0;
+   MinDecembre:   21.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    26.0;
+   MaxFevrier:    27.0;
+   MaxMars:       28.0;
+   MaxAvril:      28.0;
+   MaxMai:        29.0;
+   MaxJuin:       30.0;
+   MaxJuillet:    30.0;
+   MaxAout:       30.0;
+   MaxSeptembre:  31.0;
+   MaxOctobre:    31.0;
+   MaxNovembre:   30.0;
+   MaxDecembre:   28.0
   ),
   (Country:       'Centrafrique';
    Latitude:      6;
@@ -1969,31 +1971,31 @@ Const
    AvgNovembre:   26.6;
    AvgDecembre:   26.2;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    18.0;
+   MinFevrier:    21.0;
+   MinMars:       23.0;
+   MinAvril:      22.0;
+   MinMai:        22.0;
+   MinJuin:       22.0;
+   MinJuillet:    21.0;
+   MinAout:       21.0;
+   MinSeptembre:  21.0;
+   MinOctobre:    21.0;
+   MinNovembre:   21.0;
+   MinDecembre:   19.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    34.0;
+   MaxFevrier:    35.0;
+   MaxMars:       34.0;
+   MaxAvril:      33.0;
+   MaxMai:        32.0;
+   MaxJuin:       31.0;
+   MaxJuillet:    30.0;
+   MaxAout:       30.0;
+   MaxSeptembre:  31.0;
+   MaxOctobre:    31.0;
+   MaxNovembre:   32.0;
+   MaxDecembre:   33.0
   ),
   (Country:       'Chili';
    Latitude:      36;
@@ -2017,31 +2019,31 @@ Const
    AvgNovembre:   18.4;
    AvgDecembre:   20.5;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    13.0;
+   MinFevrier:    12.0;
+   MinMars:       11.0;
+   MinAvril:      8.0;
+   MinMai:        5.0;
+   MinJuin:       3.0;
+   MinJuillet:    3.0;
+   MinAout:       4.0;
+   MinSeptembre:  6.0;
+   MinOctobre:    8.0;
+   MinNovembre:   10.0;
+   MinDecembre:   12.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    31.0;
+   MaxFevrier:    30.0;
+   MaxMars:       29.0;
+   MaxAvril:      25.0;
+   MaxMai:        20.0;
+   MaxJuin:       17.0;
+   MaxJuillet:    16.0;
+   MaxAout:       18.0;
+   MaxSeptembre:  21.0;
+   MaxOctobre:    24.0;
+   MaxNovembre:   27.0;
+   MaxDecembre:   29.0
   ),
   (Country:       'Chine';
    Latitude:      34;
@@ -2065,31 +2067,31 @@ Const
    AvgNovembre:   4.5;
    AvgDecembre:   -1.6;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
+   MinJanvier:    -9.0;
+   MinFevrier:    -6.0;
    MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinAvril:      8.0;
+   MinMai:        14.0;
+   MinJuin:       19.0;
+   MinJuillet:    22.0;
+   MinAout:       21.0;
+   MinSeptembre:  15.0;
+   MinOctobre:    7.0;
+   MinNovembre:   -1.0;
+   MinDecembre:   -7.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    2.0;
+   MaxFevrier:    6.0;
+   MaxMars:       13.0;
+   MaxAvril:      21.0;
+   MaxMai:        27.0;
+   MaxJuin:       31.0;
+   MaxJuillet:    32.0;
+   MaxAout:       31.0;
+   MaxSeptembre:  27.0;
+   MaxOctobre:    19.0;
+   MaxNovembre:   10.0;
+   MaxDecembre:   4.0
   ),
   (Country:       'Chypre';
    Latitude:      35;
@@ -2113,31 +2115,31 @@ Const
    AvgNovembre:   16.9;
    AvgDecembre:   12.4;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    5.0;
+   MinFevrier:    6.0;
+   MinMars:       8.0;
+   MinAvril:      10.0;
+   MinMai:        15.0;
+   MinJuin:       20.0;
+   MinJuillet:    23.0;
+   MinAout:       23.0;
+   MinSeptembre:  20.0;
+   MinOctobre:    16.0;
+   MinNovembre:   11.0;
+   MinDecembre:   7.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    16.0;
+   MaxFevrier:    17.0;
+   MaxMars:       20.0;
+   MaxAvril:      24.0;
+   MaxMai:        30.0;
+   MaxJuin:       34.0;
+   MaxJuillet:    37.0;
+   MaxAout:       37.0;
+   MaxSeptembre:  33.0;
+   MaxOctobre:    28.0;
+   MaxNovembre:   23.0;
+   MaxDecembre:   18.0
   ),
   (Country:       'Colombie';
    Latitude:      4;
@@ -2161,31 +2163,31 @@ Const
    AvgNovembre:   14.2;
    AvgDecembre:   13.8;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    7.0;
+   MinFevrier:    8.0;
+   MinMars:       9.0;
+   MinAvril:      10.0;
+   MinMai:        10.0;
+   MinJuin:       9.0;
+   MinJuillet:    9.0;
+   MinAout:       9.0;
+   MinSeptembre:  8.0;
+   MinOctobre:    8.0;
+   MinNovembre:   9.0;
+   MinDecembre:   8.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    20.0;
+   MaxFevrier:    20.0;
+   MaxMars:       20.0;
+   MaxAvril:      20.0;
+   MaxMai:        20.0;
+   MaxJuin:       19.0;
+   MaxJuillet:    19.0;
+   MaxAout:       19.0;
+   MaxSeptembre:  20.0;
+   MaxOctobre:    20.0;
+   MaxNovembre:   20.0;
+   MaxDecembre:   20.0
   ),
   (Country:       'Comores';
    Latitude:      11;
@@ -2209,31 +2211,31 @@ Const
    AvgNovembre:   28.0;
    AvgDecembre:   28.1;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    24.0;
+   MinFevrier:    24.0;
+   MinMars:       24.0;
+   MinAvril:      24.0;
+   MinMai:        23.0;
+   MinJuin:       22.0;
+   MinJuillet:    21.0;
+   MinAout:       20.0;
+   MinSeptembre:  21.0;
+   MinOctobre:    23.0;
+   MinNovembre:   24.0;
+   MinDecembre:   24.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    31.0;
+   MaxFevrier:    31.0;
+   MaxMars:       32.0;
+   MaxAvril:      32.0;
+   MaxMai:        31.0;
+   MaxJuin:       30.0;
+   MaxJuillet:    29.0;
+   MaxAout:       29.0;
+   MaxSeptembre:  30.0;
+   MaxOctobre:    31.0;
+   MaxNovembre:   32.0;
+   MaxDecembre:   32.0
   ),
   (Country:       'Congo-Brazzaville';
    Latitude:      0;
@@ -2257,31 +2259,31 @@ Const
    AvgNovembre:   26.6;
    AvgDecembre:   26.5;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    22.0;
+   MinFevrier:    23.0;
+   MinMars:       23.0;
+   MinAvril:      23.0;
+   MinMai:        22.0;
+   MinJuin:       20.0;
+   MinJuillet:    19.0;
+   MinAout:       20.0;
+   MinSeptembre:  21.0;
+   MinOctobre:    22.0;
+   MinNovembre:   22.0;
+   MinDecembre:   22.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    31.0;
+   MaxFevrier:    32.0;
+   MaxMars:       32.0;
+   MaxAvril:      33.0;
+   MaxMai:        31.0;
+   MaxJuin:       29.0;
+   MaxJuillet:    28.0;
+   MaxAout:       29.0;
+   MaxSeptembre:  31.0;
+   MaxOctobre:    31.0;
+   MaxNovembre:   31.0;
+   MaxDecembre:   31.0
   ),
   (Country:       'Coree du Nord';
    Latitude:      40;
@@ -2305,31 +2307,31 @@ Const
    AvgNovembre:   4.9;
    AvgDecembre:   -2.4;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
+   MinJanvier:    -10.0;
+   MinFevrier:    -7.0;
+   MinMars:       -1.0;
+   MinAvril:      6.0;
+   MinMai:        12.0;
+   MinJuin:       17.0;
+   MinJuillet:    21.0;
+   MinAout:       21.0;
+   MinSeptembre:  15.0;
+   MinOctobre:    8.0;
    MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinDecembre:   -7.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    -1.0;
+   MaxFevrier:    3.0;
+   MaxMars:       9.0;
+   MaxAvril:      18.0;
+   MaxMai:        23.0;
+   MaxJuin:       27.0;
+   MaxJuillet:    29.0;
+   MaxAout:       29.0;
+   MaxSeptembre:  25.0;
+   MaxOctobre:    18.0;
+   MaxNovembre:   10.0;
+   MaxDecembre:   2.0
   ),
   (Country:       'Coree du Sud';
    Latitude:      35;
@@ -2353,31 +2355,31 @@ Const
    AvgNovembre:   7.2;
    AvgDecembre:   0.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    -6.0;
+   MinFevrier:    -4.0;
+   MinMars:       1.0;
+   MinAvril:      7.0;
+   MinMai:        13.0;
+   MinJuin:       18.0;
+   MinJuillet:    22.0;
+   MinAout:       23.0;
+   MinSeptembre:  17.0;
+   MinOctobre:    10.0;
+   MinNovembre:   3.0;
+   MinDecembre:   -4.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    2.0;
+   MaxFevrier:    5.0;
+   MaxMars:       11.0;
+   MaxAvril:      18.0;
+   MaxMai:        24.0;
+   MaxJuin:       28.0;
+   MaxJuillet:    29.0;
+   MaxAout:       30.0;
+   MaxSeptembre:  26.0;
+   MaxOctobre:    20.0;
+   MaxNovembre:   12.0;
+   MaxDecembre:   4.0
   ),
   (Country:       'Costa Rica';
    Latitude:      9;
@@ -2388,44 +2390,44 @@ Const
    LongDirection: 'O';
    Superficie:    51100;
    Capital:       'San Jos‚';
-   AvgJanvier:    25.0;
-   AvgFevrier:    25.0;
-   AvgMars:       25.5;
-   AvgAvril:      26.0;
-   AvgMai:        27.0;
-   AvgJuin:       26.5;
-   AvgJuillet:    26.5;
-   AvgAout:       26.0;
-   AvgSeptembre:  26.5;
-   AvgOctobre:    26.0;
-   AvgNovembre:   26.0;
-   AvgDecembre:   25.0;
+   AvgJanvier:    19.0;
+   AvgFevrier:    19.0;
+   AvgMars:       20.5;
+   AvgAvril:      21.5;
+   AvgMai:        22.0;
+   AvgJuin:       21.5;
+   AvgJuillet:    21.5;
+   AvgAout:       21.0;
+   AvgSeptembre:  21.0;
+   AvgOctobre:    20.5;
+   AvgNovembre:   20.5;
+   AvgDecembre:   19.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    14.0;
+   MinFevrier:    14.0;
+   MinMars:       15.0;
+   MinAvril:      17.0;
+   MinMai:        17.0;
+   MinJuin:       17.0;
+   MinJuillet:    17.0;
+   MinAout:       16.0;
+   MinSeptembre:  16.0;
+   MinOctobre:    16.0;
+   MinNovembre:   16.0;
+   MinDecembre:   14.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    24.0;
+   MaxFevrier:    24.0;
+   MaxMars:       26.0;
+   MaxAvril:      26.0;
+   MaxMai:        27.0;
+   MaxJuin:       26.0;
+   MaxJuillet:    25.0;
+   MaxAout:       26.0;
+   MaxSeptembre:  26.0;
+   MaxOctobre:    25.0;
+   MaxNovembre:   25.0;
+   MaxDecembre:   24.0
   ),
   (Country:       'Cote d''Ivoire';
    Latitude:      7;
@@ -2449,31 +2451,31 @@ Const
    AvgNovembre:   26.8;
    AvgDecembre:   25.9;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    18.0;
+   MinFevrier:    21.0;
+   MinMars:       23.0;
+   MinAvril:      23.0;
+   MinMai:        23.0;
+   MinJuin:       22.0;
+   MinJuillet:    22.0;
+   MinAout:       21.0;
+   MinSeptembre:  22.0;
+   MinOctobre:    22.0;
+   MinNovembre:   21.0;
+   MinDecembre:   19.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    35.0;
+   MaxFevrier:    36.0;
+   MaxMars:       35.0;
+   MaxAvril:      34.0;
+   MaxMai:        33.0;
+   MaxJuin:       32.0;
+   MaxJuillet:    30.0;
+   MaxAout:       30.0;
+   MaxSeptembre:  31.0;
+   MaxOctobre:    32.0;
+   MaxNovembre:   33.0;
+   MaxDecembre:   33.0
   ),
   (Country:       'Croatie';
    Latitude:      44;
@@ -2497,31 +2499,31 @@ Const
    AvgNovembre:   7.2;
    AvgDecembre:   2.2;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    -2.0;
+   MinFevrier:    -1.0;
+   MinMars:       2.0;
+   MinAvril:      7.0;
+   MinMai:        11.0;
+   MinJuin:       15.0;
+   MinJuillet:    16.0;
+   MinAout:       16.0;
+   MinSeptembre:  12.0;
+   MinOctobre:    8.0;
+   MinNovembre:   4.0;
+   MinDecembre:   -1.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    5.0;
+   MaxFevrier:    8.0;
+   MaxMars:       13.0;
+   MaxAvril:      18.0;
+   MaxMai:        22.0;
+   MaxJuin:       26.0;
+   MaxJuillet:    28.0;
+   MaxAout:       28.0;
+   MaxSeptembre:  22.0;
+   MaxOctobre:    17.0;
+   MaxNovembre:   11.0;
+   MaxDecembre:   5.0
   ),
   (Country:       'Cuba';
    Latitude:      21;
@@ -2545,31 +2547,31 @@ Const
    AvgNovembre:   24.8;
    AvgDecembre:   23.4;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    19.0;
+   MinFevrier:    19.0;
+   MinMars:       19.0;
+   MinAvril:      21.0;
+   MinMai:        22.0;
+   MinJuin:       24.0;
+   MinJuillet:    24.0;
+   MinAout:       24.0;
+   MinSeptembre:  24.0;
+   MinOctobre:    23.0;
+   MinNovembre:   21.0;
+   MinDecembre:   20.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    27.0;
+   MaxFevrier:    28.0;
+   MaxMars:       28.0;
+   MaxAvril:      30.0;
+   MaxMai:        31.0;
+   MaxJuin:       32.0;
+   MaxJuillet:    32.0;
+   MaxAout:       32.0;
+   MaxSeptembre:  32.0;
+   MaxOctobre:    30.0;
+   MaxNovembre:   29.0;
+   MaxDecembre:   27.0
   ),
   (Country:       'Curacao';
    Latitude:      12;
@@ -2593,31 +2595,31 @@ Const
    AvgNovembre:   28.5;
    AvgDecembre:   27.7;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    24.0;
+   MinFevrier:    24.0;
+   MinMars:       25.0;
+   MinAvril:      26.0;
+   MinMai:        26.0;
+   MinJuin:       26.0;
+   MinJuillet:    26.0;
+   MinAout:       27.0;
+   MinSeptembre:  27.0;
+   MinOctobre:    26.0;
+   MinNovembre:   26.0;
+   MinDecembre:   25.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    30.0;
+   MaxFevrier:    30.0;
+   MaxMars:       31.0;
+   MaxAvril:      31.0;
+   MaxMai:        32.0;
+   MaxJuin:       32.0;
+   MaxJuillet:    32.0;
+   MaxAout:       33.0;
+   MaxSeptembre:  33.0;
+   MaxOctobre:    32.0;
+   MaxNovembre:   31.0;
+   MaxDecembre:   30.0
   ),
   (Country:       'Danemark';
    Latitude:      56;
@@ -2641,31 +2643,31 @@ Const
    AvgNovembre:   5.5;
    AvgDecembre:   2.6;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
+   MinJanvier:    -1.0;
+   MinFevrier:    -1.0;
    MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
+   MinAvril:      3.0;
+   MinMai:        7.0;
+   MinJuin:       11.0;
+   MinJuillet:    13.0;
+   MinAout:       14.0;
+   MinSeptembre:  10.0;
+   MinOctobre:    7.0;
+   MinNovembre:   3.0;
    MinDecembre:   0.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    4.0;
+   MaxFevrier:    4.0;
+   MaxMars:       7.0;
+   MaxAvril:      12.0;
+   MaxMai:        16.0;
+   MaxJuin:       20.0;
+   MaxJuillet:    22.0;
+   MaxAout:       22.0;
+   MaxSeptembre:  18.0;
+   MaxOctobre:    12.0;
+   MaxNovembre:   8.0;
+   MaxDecembre:   5.0
   ),
   (Country:       'Djibouti';
    Latitude:      11;
@@ -2689,31 +2691,31 @@ Const
    AvgNovembre:   27.0;
    AvgDecembre:   25.5;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    22.0;
+   MinFevrier:    23.0;
+   MinMars:       24.0;
+   MinAvril:      25.0;
+   MinMai:        27.0;
+   MinJuin:       29.0;
+   MinJuillet:    31.0;
+   MinAout:       31.0;
+   MinSeptembre:  29.0;
+   MinOctobre:    26.0;
+   MinNovembre:   23.0;
+   MinDecembre:   22.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    29.0;
+   MaxFevrier:    29.0;
+   MaxMars:       30.0;
+   MaxAvril:      32.0;
+   MaxMai:        35.0;
+   MaxJuin:       39.0;
+   MaxJuillet:    42.0;
+   MaxAout:       41.0;
+   MaxSeptembre:  37.0;
+   MaxOctobre:    33.0;
+   MaxNovembre:   31.0;
+   MaxDecembre:   29.0
   ),
   (Country:       'Dominique';
    Latitude:      15;
@@ -2737,31 +2739,31 @@ Const
    AvgNovembre:   27.4;
    AvgDecembre:   26.4;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    22.0;
+   MinFevrier:    21.0;
+   MinMars:       22.0;
+   MinAvril:      23.0;
+   MinMai:        24.0;
+   MinJuin:       24.0;
+   MinJuillet:    24.0;
+   MinAout:       24.0;
+   MinSeptembre:  24.0;
+   MinOctobre:    24.0;
+   MinNovembre:   23.0;
+   MinDecembre:   22.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    30.0;
+   MaxFevrier:    30.0;
+   MaxMars:       31.0;
+   MaxAvril:      31.0;
+   MaxMai:        32.0;
+   MaxJuin:       32.0;
+   MaxJuillet:    32.0;
+   MaxAout:       32.0;
+   MaxSeptembre:  32.0;
+   MaxOctobre:    32.0;
+   MaxNovembre:   32.0;
+   MaxDecembre:   31.0
   ),
   (Country:       'Egypte';
    Latitude:      26;
@@ -2785,31 +2787,31 @@ Const
    AvgNovembre:   20.2;
    AvgDecembre:   16.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    10.0;
+   MinFevrier:    11.0;
+   MinMars:       13.0;
+   MinAvril:      16.0;
+   MinMai:        19.0;
+   MinJuin:       22.0;
+   MinJuillet:    24.0;
+   MinAout:       24.0;
+   MinSeptembre:  23.0;
+   MinOctobre:    20.0;
+   MinNovembre:   15.0;
+   MinDecembre:   11.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    19.0;
+   MaxFevrier:    21.0;
+   MaxMars:       24.0;
+   MaxAvril:      28.0;
+   MaxMai:        32.0;
+   MaxJuin:       35.0;
+   MaxJuillet:    35.0;
+   MaxAout:       35.0;
+   MaxSeptembre:  33.0;
+   MaxOctobre:    30.0;
+   MaxNovembre:   25.0;
+   MaxDecembre:   21.0
   ),
   (Country:       'Emirats arabes unis';
    Latitude:      24;
@@ -2833,31 +2835,31 @@ Const
    AvgNovembre:   25.3;
    AvgDecembre:   21.2;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    14.0;
+   MinFevrier:    15.0;
+   MinMars:       18.0;
+   MinAvril:      21.0;
+   MinMai:        25.0;
+   MinJuin:       27.0;
+   MinJuillet:    30.0;
+   MinAout:       30.0;
+   MinSeptembre:  28.0;
+   MinOctobre:    24.0;
+   MinNovembre:   20.0;
+   MinDecembre:   16.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    24.0;
+   MaxFevrier:    26.0;
+   MaxMars:       30.0;
+   MaxAvril:      35.0;
+   MaxMai:        39.0;
+   MaxJuin:       41.0;
+   MaxJuillet:    42.0;
+   MaxAout:       43.0;
+   MaxSeptembre:  41.0;
+   MaxOctobre:    37.0;
+   MaxNovembre:   31.0;
+   MaxDecembre:   26.0
   ),
   (Country:       'Equateur';
    Latitude:      1;
@@ -2881,31 +2883,31 @@ Const
    AvgNovembre:   14.4;
    AvgDecembre:   14.4;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    10.0;
+   MinFevrier:    10.0;
+   MinMars:       10.0;
+   MinAvril:      10.0;
+   MinMai:        10.0;
+   MinJuin:       10.0;
+   MinJuillet:    9.0;
+   MinAout:       9.0;
+   MinSeptembre:  9.0;
+   MinOctobre:    9.0;
+   MinNovembre:   10.0;
+   MinDecembre:   10.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    19.0;
+   MaxFevrier:    19.0;
+   MaxMars:       19.0;
+   MaxAvril:      19.0;
+   MaxMai:        19.0;
+   MaxJuin:       19.0;
+   MaxJuillet:    20.0;
+   MaxAout:       20.0;
+   MaxSeptembre:  20.0;
+   MaxOctobre:    20.0;
+   MaxNovembre:   19.0;
+   MaxDecembre:   19.0
   ),
   (Country:       'Erythree';
    Latitude:      15;
@@ -2929,31 +2931,31 @@ Const
    AvgNovembre:   15.0;
    AvgDecembre:   14.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    6.0;
+   MinFevrier:    7.0;
+   MinMars:       9.0;
+   MinAvril:      10.0;
+   MinMai:        11.0;
+   MinJuin:       11.0;
+   MinJuillet:    11.0;
+   MinAout:       11.0;
+   MinSeptembre:  9.0;
+   MinOctobre:    9.0;
+   MinNovembre:   8.0;
+   MinDecembre:   6.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    23.0;
+   MaxFevrier:    24.0;
+   MaxMars:       25.0;
+   MaxAvril:      25.0;
+   MaxMai:        25.0;
+   MaxJuin:       25.0;
+   MaxJuillet:    22.0;
+   MaxAout:       22.0;
+   MaxSeptembre:  23.0;
+   MaxOctobre:    22.0;
+   MaxNovembre:   22.0;
+   MaxDecembre:   22.0
   ),
   (Country:       'Espagne';
    Latitude:      39;
@@ -2977,31 +2979,31 @@ Const
    AvgNovembre:   10.0;
    AvgDecembre:   7.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    2.0;
+   MinFevrier:    3.0;
+   MinMars:       5.0;
+   MinAvril:      7.0;
+   MinMai:        11.0;
+   MinJuin:       16.0;
+   MinJuillet:    19.0;
+   MinAout:       19.0;
+   MinSeptembre:  15.0;
+   MinOctobre:    10.0;
+   MinNovembre:   5.0;
+   MinDecembre:   3.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    11.0;
+   MaxFevrier:    13.0;
+   MaxMars:       16.0;
+   MaxAvril:      19.0;
+   MaxMai:        24.0;
+   MaxJuin:       30.0;
+   MaxJuillet:    33.0;
+   MaxAout:       33.0;
+   MaxSeptembre:  28.0;
+   MaxOctobre:    21.0;
+   MaxNovembre:   15.0;
+   MaxDecembre:   11.0
   ),
   (Country:       'Estonie';
    Latitude:      58;
@@ -3025,31 +3027,31 @@ Const
    AvgNovembre:   2.0;
    AvgDecembre:   -1.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
+   MinJanvier:    -6.0;
+   MinFevrier:    -6.0;
+   MinMars:       -4.0;
+   MinAvril:      1.0;
+   MinMai:        5.0;
+   MinJuin:       10.0;
+   MinJuillet:    13.0;
+   MinAout:       12.0;
+   MinSeptembre:  8.0;
+   MinOctobre:    4.0;
    MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinDecembre:   -3.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    -1.0;
+   MaxFevrier:    -1.0;
+   MaxMars:       3.0;
+   MaxAvril:      9.0;
+   MaxMai:        15.0;
+   MaxJuin:       19.0;
+   MaxJuillet:    22.0;
+   MaxAout:       21.0;
+   MaxSeptembre:  16.0;
+   MaxOctobre:    9.0;
+   MaxNovembre:   4.0;
+   MaxDecembre:   1.0
   ),
   (Country:       'Etats-Unis';
    Latitude:      36;
@@ -3073,31 +3075,31 @@ Const
    AvgNovembre:   10.0;
    AvgDecembre:   5.4;
 
-   MinJanvier:    0.0;
+   MinJanvier:    -1.0;
    MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinMars:       4.0;
+   MinAvril:      9.0;
+   MinMai:        14.0;
+   MinJuin:       20.0;
+   MinJuillet:    22.0;
+   MinAout:       22.0;
+   MinSeptembre:  18.0;
+   MinOctobre:    11.0;
+   MinNovembre:   5.0;
+   MinDecembre:   1.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    7.0;
+   MaxFevrier:    9.0;
+   MaxMars:       14.0;
+   MaxAvril:      20.0;
+   MaxMai:        25.0;
+   MaxJuin:       30.0;
+   MaxJuillet:    32.0;
+   MaxAout:       31.0;
+   MaxSeptembre:  27.0;
+   MaxOctobre:    21.0;
+   MaxNovembre:   15.0;
+   MaxDecembre:   9.0
   ),
   (Country:       'Ethiopie';
    Latitude:      9;
@@ -3121,31 +3123,31 @@ Const
    AvgNovembre:   16.1;
    AvgDecembre:   15.5;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    9.0;
+   MinFevrier:    10.0;
+   MinMars:       12.0;
+   MinAvril:      13.0;
+   MinMai:        13.0;
+   MinJuin:       12.0;
+   MinJuillet:    12.0;
+   MinAout:       12.0;
+   MinSeptembre:  12.0;
+   MinOctobre:    10.0;
+   MinNovembre:   9.0;
+   MinDecembre:   8.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    24.0;
+   MaxFevrier:    25.0;
+   MaxMars:       25.0;
+   MaxAvril:      25.0;
+   MaxMai:        25.0;
+   MaxJuin:       23.0;
+   MaxJuillet:    21.0;
+   MaxAout:       20.0;
+   MaxSeptembre:  21.0;
+   MaxOctobre:    23.0;
+   MaxNovembre:   23.0;
+   MaxDecembre:   23.0
   ),
   (Country:       'Fidji';
    Latitude:      16;
@@ -3169,31 +3171,31 @@ Const
    AvgNovembre:   24.5;
    AvgDecembre:   25.5;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    23.0;
+   MinFevrier:    23.0;
+   MinMars:       23.0;
+   MinAvril:      22.0;
+   MinMai:        21.0;
+   MinJuin:       20.0;
+   MinJuillet:    20.0;
+   MinAout:       20.0;
+   MinSeptembre:  20.0;
+   MinOctobre:    21.0;
+   MinNovembre:   21.0;
+   MinDecembre:   22.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    30.0;
+   MaxFevrier:    30.0;
+   MaxMars:       30.0;
+   MaxAvril:      28.0;
+   MaxMai:        27.0;
+   MaxJuin:       26.0;
+   MaxJuillet:    26.0;
+   MaxAout:       26.0;
+   MaxSeptembre:  26.0;
+   MaxOctobre:    27.0;
+   MaxNovembre:   28.0;
+   MaxDecembre:   29.0
   ),
   (Country:       'Finlande';
    Latitude:      64;
@@ -3217,31 +3219,31 @@ Const
    AvgNovembre:   1.8;
    AvgDecembre:   -1.3;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
+   MinJanvier:    -6.0;
+   MinFevrier:    -7.0;
+   MinMars:       -4.0;
    MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
+   MinMai:        6.0;
+   MinJuin:       10.0;
+   MinJuillet:    14.0;
+   MinAout:       12.0;
+   MinSeptembre:  8.0;
+   MinOctobre:    3.0;
    MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinDecembre:   -4.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    -1.0;
+   MaxFevrier:    -2.0;
+   MaxMars:       2.0;
+   MaxAvril:      9.0;
+   MaxMai:        15.0;
+   MaxJuin:       19.0;
+   MaxJuillet:    22.0;
+   MaxAout:       21.0;
+   MaxSeptembre:  16.0;
+   MaxOctobre:    9.0;
+   MaxNovembre:   4.0;
+   MaxDecembre:   1.0
   ),
   (Country:       'France';
    Latitude:      46;
@@ -3265,31 +3267,31 @@ Const
    AvgNovembre:   7.9;
    AvgDecembre:   5.2;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    2.0;
+   MinFevrier:    2.0;
+   MinMars:       4.0;
+   MinAvril:      6.0;
+   MinMai:        10.0;
+   MinJuin:       13.0;
+   MinJuillet:    15.0;
+   MinAout:       14.0;
+   MinSeptembre:  11.0;
+   MinOctobre:    8.0;
+   MinNovembre:   5.0;
+   MinDecembre:   2.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    8.0;
+   MaxFevrier:    9.0;
+   MaxMars:       13.0;
+   MaxAvril:      17.0;
+   MaxMai:        20.0;
+   MaxJuin:       24.0;
+   MaxJuillet:    26.0;
+   MaxAout:       26.0;
+   MaxSeptembre:  22.0;
+   MaxOctobre:    17.0;
+   MaxNovembre:   11.0;
+   MaxDecembre:   8.0
   ),
   (Country:       'Gabon';
    Latitude:      0;
@@ -3313,31 +3315,31 @@ Const
    AvgNovembre:   26.4;
    AvgDecembre:   26.8;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    24.0;
+   MinFevrier:    24.0;
+   MinMars:       24.0;
+   MinAvril:      24.0;
+   MinMai:        24.0;
+   MinJuin:       24.0;
+   MinJuillet:    23.0;
+   MinAout:       23.0;
+   MinSeptembre:  24.0;
+   MinOctobre:    24.0;
+   MinNovembre:   23.0;
+   MinDecembre:   24.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    30.0;
+   MaxFevrier:    31.0;
+   MaxMars:       31.0;
+   MaxAvril:      31.0;
+   MaxMai:        30.0;
+   MaxJuin:       29.0;
+   MaxJuillet:    28.0;
+   MaxAout:       28.0;
+   MaxSeptembre:  29.0;
+   MaxOctobre:    29.0;
+   MaxNovembre:   29.0;
+   MaxDecembre:   30.0
   ),
   (Country:       'Gambie';
    Latitude:      13;
@@ -3361,31 +3363,31 @@ Const
    AvgNovembre:   27.2;
    AvgDecembre:   25.6;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    17.0;
+   MinFevrier:    18.0;
+   MinMars:       19.0;
+   MinAvril:      20.0;
+   MinMai:        21.0;
+   MinJuin:       24.0;
+   MinJuillet:    24.0;
+   MinAout:       23.0;
+   MinSeptembre:  23.0;
+   MinOctobre:    23.0;
+   MinNovembre:   21.0;
+   MinDecembre:   18.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    33.0;
+   MaxFevrier:    34.0;
+   MaxMars:       35.0;
+   MaxAvril:      34.0;
+   MaxMai:        33.0;
+   MaxJuin:       33.0;
+   MaxJuillet:    32.0;
+   MaxAout:       31.0;
+   MaxSeptembre:  31.0;
+   MaxOctobre:    33.0;
+   MaxNovembre:   34.0;
+   MaxDecembre:   33.0
   ),
   (Country:       'Georgie';
    Latitude:      42;
@@ -3409,31 +3411,31 @@ Const
    AvgNovembre:   8.9;
    AvgDecembre:   4.9;
 
-   MinJanvier:    0.0;
+   MinJanvier:    -1.0;
    MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinMars:       3.0;
+   MinAvril:      8.0;
+   MinMai:        12.0;
+   MinJuin:       16.0;
+   MinJuillet:    20.0;
+   MinAout:       20.0;
+   MinSeptembre:  15.0;
+   MinOctobre:    10.0;
+   MinNovembre:   5.0;
+   MinDecembre:   1.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    7.0;
+   MaxFevrier:    8.0;
+   MaxMars:       13.0;
+   MaxAvril:      19.0;
+   MaxMai:        23.0;
+   MaxJuin:       28.0;
+   MaxJuillet:    31.0;
+   MaxAout:       31.0;
+   MaxSeptembre:  26.0;
+   MaxOctobre:    20.0;
+   MaxNovembre:   13.0;
+   MaxDecembre:   8.0
   ),
   (Country:       'Georgie du Sud';
    Latitude:      56;
@@ -3457,31 +3459,31 @@ Const
    AvgNovembre:   3.5;
    AvgDecembre:   4.5;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
+   MinJanvier:    3.0;
+   MinFevrier:    4.0;
+   MinMars:       3.0;
+   MinAvril:      1.0;
+   MinMai:        -1.0;
+   MinJuin:       -2.0;
+   MinJuillet:    -2.0;
+   MinAout:       -2.0;
+   MinSeptembre:  -1.0;
    MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinNovembre:   1.0;
+   MinDecembre:   2.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    8.0;
+   MaxFevrier:    9.0;
+   MaxMars:       8.0;
+   MaxAvril:      6.0;
+   MaxMai:        4.0;
+   MaxJuin:       2.0;
+   MaxJuillet:    2.0;
+   MaxAout:       3.0;
+   MaxSeptembre:  4.0;
+   MaxOctobre:    5.0;
+   MaxNovembre:   6.0;
+   MaxDecembre:   7.0
   ),
   (Country:       'Ghana';
    Latitude:      7;
@@ -3505,31 +3507,31 @@ Const
    AvgNovembre:   28.3;
    AvgDecembre:   28.6;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    25.0;
+   MinFevrier:    26.0;
+   MinMars:       26.0;
+   MinAvril:      26.0;
+   MinMai:        25.0;
+   MinJuin:       24.0;
+   MinJuillet:    24.0;
+   MinAout:       23.0;
+   MinSeptembre:  24.0;
+   MinOctobre:    24.0;
+   MinNovembre:   25.0;
+   MinDecembre:   25.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    32.0;
+   MaxFevrier:    33.0;
+   MaxMars:       33.0;
+   MaxAvril:      33.0;
+   MaxMai:        32.0;
+   MaxJuin:       30.0;
+   MaxJuillet:    29.0;
+   MaxAout:       28.0;
+   MaxSeptembre:  30.0;
+   MaxOctobre:    31.0;
+   MaxNovembre:   32.0;
+   MaxDecembre:   32.0
   ),
   (Country:       'Gibraltar';
    Latitude:      36;
@@ -3553,31 +3555,31 @@ Const
    AvgNovembre:   16.6;
    AvgDecembre:   14.6;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    11.0;
+   MinFevrier:    11.0;
+   MinMars:       13.0;
+   MinAvril:      14.0;
+   MinMai:        16.0;
+   MinJuin:       18.0;
+   MinJuillet:    20.0;
+   MinAout:       21.0;
+   MinSeptembre:  20.0;
+   MinOctobre:    17.0;
+   MinNovembre:   14.0;
+   MinDecembre:   12.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    16.0;
+   MaxFevrier:    17.0;
+   MaxMars:       18.0;
+   MaxAvril:      20.0;
+   MaxMai:        23.0;
+   MaxJuin:       26.0;
+   MaxJuillet:    28.0;
+   MaxAout:       28.0;
+   MaxSeptembre:  26.0;
+   MaxOctobre:    23.0;
+   MaxNovembre:   19.0;
+   MaxDecembre:   17.0
   ),
   (Country:       'Grece';
    Latitude:      38;
@@ -3601,31 +3603,31 @@ Const
    AvgNovembre:   15.3;
    AvgDecembre:   11.6;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    7.0;
+   MinFevrier:    7.0;
+   MinMars:       9.0;
+   MinAvril:      12.0;
+   MinMai:        16.0;
+   MinJuin:       21.0;
+   MinJuillet:    23.0;
+   MinAout:       24.0;
+   MinSeptembre:  20.0;
+   MinOctobre:    16.0;
+   MinNovembre:   12.0;
+   MinDecembre:   8.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    13.0;
+   MaxFevrier:    14.0;
+   MaxMars:       16.0;
+   MaxAvril:      20.0;
+   MaxMai:        25.0;
+   MaxJuin:       30.0;
+   MaxJuillet:    33.0;
+   MaxAout:       33.0;
+   MaxSeptembre:  29.0;
+   MaxOctobre:    24.0;
+   MaxNovembre:   19.0;
+   MaxDecembre:   15.0
   ),
   (Country:       'Grenade';
    Latitude:      12;
@@ -3649,31 +3651,31 @@ Const
    AvgNovembre:   27.6;
    AvgDecembre:   27.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    23.0;
+   MinFevrier:    23.0;
+   MinMars:       24.0;
+   MinAvril:      25.0;
+   MinMai:        25.0;
+   MinJuin:       25.0;
+   MinJuillet:    25.0;
+   MinAout:       25.0;
+   MinSeptembre:  25.0;
+   MinOctobre:    25.0;
+   MinNovembre:   24.0;
+   MinDecembre:   24.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    30.0;
+   MaxFevrier:    30.0;
+   MaxMars:       30.0;
+   MaxAvril:      31.0;
+   MaxMai:        31.0;
+   MaxJuin:       31.0;
+   MaxJuillet:    31.0;
+   MaxAout:       31.0;
+   MaxSeptembre:  32.0;
+   MaxOctobre:    31.0;
+   MaxNovembre:   31.0;
+   MaxDecembre:   30.0
   ),
   (Country:       'Groenland';
    Latitude:      71;
@@ -3697,31 +3699,31 @@ Const
    AvgNovembre:   -3.5;
    AvgDecembre:   -6.5;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    -10.0;
+   MinFevrier:    -11.0;
+   MinMars:       -11.0;
+   MinAvril:      -6.0;
+   MinMai:        -2.0;
+   MinJuin:       1.0;
+   MinJuillet:    4.0;
+   MinAout:       4.0;
+   MinSeptembre:  1.0;
+   MinOctobre:    -3.0;
+   MinNovembre:   -6.0;
+   MinDecembre:   -9.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    -5.0;
+   MaxFevrier:    -5.0;
+   MaxMars:       -5.0;
+   MaxAvril:      -1.0;
+   MaxMai:        3.0;
+   MaxJuin:       7.0;
+   MaxJuillet:    10.0;
+   MaxAout:       9.0;
+   MaxSeptembre:  6.0;
+   MaxOctobre:    1.0;
+   MaxNovembre:   -1.0;
+   MaxDecembre:   -4.0
   ),
   (Country:       'Guadeloupe';
    Latitude:      16;
@@ -3745,31 +3747,31 @@ Const
    AvgNovembre:   27.0;
    AvgDecembre:   25.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    21.0;
+   MinFevrier:    21.0;
+   MinMars:       21.0;
+   MinAvril:      22.0;
+   MinMai:        24.0;
+   MinJuin:       24.0;
+   MinJuillet:    24.0;
+   MinAout:       24.0;
+   MinSeptembre:  24.0;
+   MinOctobre:    23.0;
+   MinNovembre:   22.0;
+   MinDecembre:   21.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    29.0;
+   MaxFevrier:    29.0;
+   MaxMars:       30.0;
+   MaxAvril:      30.0;
+   MaxMai:        31.0;
+   MaxJuin:       32.0;
+   MaxJuillet:    32.0;
+   MaxAout:       32.0;
+   MaxSeptembre:  32.0;
+   MaxOctobre:    31.0;
+   MaxNovembre:   31.0;
+   MaxDecembre:   30.0
   ),
   (Country:       'Guam';
    Latitude:      13;
@@ -3793,31 +3795,31 @@ Const
    AvgNovembre:   27.9;
    AvgDecembre:   27.6;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    24.0;
+   MinFevrier:    24.0;
+   MinMars:       24.0;
+   MinAvril:      25.0;
+   MinMai:        25.0;
+   MinJuin:       25.0;
+   MinJuillet:    25.0;
+   MinAout:       25.0;
+   MinSeptembre:  25.0;
+   MinOctobre:    25.0;
+   MinNovembre:   25.0;
+   MinDecembre:   25.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    30.0;
+   MaxFevrier:    30.0;
+   MaxMars:       30.0;
+   MaxAvril:      31.0;
+   MaxMai:        31.0;
+   MaxJuin:       31.0;
+   MaxJuillet:    31.0;
+   MaxAout:       31.0;
+   MaxSeptembre:  31.0;
+   MaxOctobre:    31.0;
+   MaxNovembre:   30.0;
+   MaxDecembre:   30.0
   ),
   (Country:       'Guatemala';
    Latitude:      15;
@@ -3841,31 +3843,31 @@ Const
    AvgNovembre:   18.5;
    AvgDecembre:   18.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    12.0;
+   MinFevrier:    13.0;
+   MinMars:       14.0;
+   MinAvril:      15.0;
+   MinMai:        16.0;
+   MinJuin:       16.0;
+   MinJuillet:    16.0;
+   MinAout:       16.0;
+   MinSeptembre:  16.0;
+   MinOctobre:    15.0;
+   MinNovembre:   14.0;
+   MinDecembre:   13.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    24.0;
+   MaxFevrier:    25.0;
+   MaxMars:       27.0;
+   MaxAvril:      28.0;
+   MaxMai:        27.0;
+   MaxJuin:       25.0;
+   MaxJuillet:    25.0;
+   MaxAout:       25.0;
+   MaxSeptembre:  24.0;
+   MaxOctobre:    24.0;
+   MaxNovembre:   23.0;
+   MaxDecembre:   23.0
   ),
   (Country:       'Guernesey';
    Latitude:      49;
@@ -3889,31 +3891,31 @@ Const
    AvgNovembre:   10.0;
    AvgDecembre:   7.8;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    5.0;
+   MinFevrier:    4.6;
+   MinMars:       5.6;
+   MinAvril:      6.6;
+   MinMai:        9.2;
+   MinJuin:       11.5;
+   MinJuillet:    13.6;
+   MinAout:       14.1;
+   MinSeptembre:  12.9;
+   MinOctobre:    10.8;
+   MinNovembre:   8.1;
+   MinDecembre:   6.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    8.7;
+   MaxFevrier:    8.4;
+   MaxMars:       10.0;
+   MaxAvril:      11.8;
+   MaxMai:        14.9;
+   MaxJuin:       17.5;
+   MaxJuillet:    19.5;
+   MaxAout:       19.8;
+   MaxSeptembre:  18.0;
+   MaxOctobre:    15.1;
+   MaxNovembre:   11.8;
+   MaxDecembre:   9.5
   ),
   (Country:       'Guinee';
    Latitude:      9;
@@ -3937,18 +3939,18 @@ Const
    AvgNovembre:   28.0;
    AvgDecembre:   27.9;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    23.0;
+   MinFevrier:    24.0;
+   MinMars:       25.0;
+   MinAvril:      25.0;
+   MinMai:        25.0;
+   MinJuin:       24.0;
+   MinJuillet:    24.0;
+   MinAout:       24.0;
+   MinSeptembre:  24.0;
+   MinOctobre:    24.0;
+   MinNovembre:   25.0;
+   MinDecembre:   24.0;
 
    MaxJanvier:    0.0;
    MaxFevrier:    0.0;
@@ -3985,31 +3987,31 @@ Const
    AvgNovembre:   26.5;
    AvgDecembre:   26.9;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    23.0;
+   MinFevrier:    24.0;
+   MinMars:       24.0;
+   MinAvril:      24.0;
+   MinMai:        23.0;
+   MinJuin:       23.0;
+   MinJuillet:    23.0;
+   MinAout:       23.0;
+   MinSeptembre:  23.0;
+   MinOctobre:    23.0;
+   MinNovembre:   23.0;
+   MinDecembre:   23.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    31.0;
+   MaxFevrier:    32.0;
+   MaxMars:       31.0;
+   MaxAvril:      31.0;
+   MaxMai:        30.0;
+   MaxJuin:       29.0;
+   MaxJuillet:    28.0;
+   MaxAout:       28.0;
+   MaxSeptembre:  28.0;
+   MaxOctobre:    29.0;
+   MaxNovembre:   30.0;
+   MaxDecembre:   31.0
   ),
   (Country:       'Guinee-Bissau';
    Latitude:      11;
@@ -4033,31 +4035,31 @@ Const
    AvgNovembre:   28.3;
    AvgDecembre:   26.2;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    19.0;
+   MinFevrier:    20.0;
+   MinMars:       21.0;
+   MinAvril:      22.0;
+   MinMai:        23.0;
+   MinJuin:       25.0;
+   MinJuillet:    24.0;
+   MinAout:       24.0;
+   MinSeptembre:  24.0;
+   MinOctobre:    25.0;
+   MinNovembre:   24.0;
+   MinDecembre:   20.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    33.0;
+   MaxFevrier:    35.0;
+   MaxMars:       35.0;
+   MaxAvril:      35.0;
+   MaxMai:        34.0;
+   MaxJuin:       33.0;
+   MaxJuillet:    31.0;
+   MaxAout:       30.0;
+   MaxSeptembre:  31.0;
+   MaxOctobre:    32.0;
+   MaxNovembre:   33.0;
+   MaxDecembre:   32.0
   ),
   (Country:       'Guyana';
    Latitude:      4;
@@ -4081,31 +4083,31 @@ Const
    AvgNovembre:   27.3;
    AvgDecembre:   27.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    23.0;
+   MinFevrier:    24.0;
+   MinMars:       24.0;
+   MinAvril:      24.0;
+   MinMai:        24.0;
+   MinJuin:       24.0;
+   MinJuillet:    23.0;
+   MinAout:       24.0;
+   MinSeptembre:  24.0;
+   MinOctobre:    24.0;
+   MinNovembre:   24.0;
+   MinDecembre:   24.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    30.0;
+   MaxFevrier:    30.0;
+   MaxMars:       30.0;
+   MaxAvril:      31.0;
+   MaxMai:        31.0;
+   MaxJuin:       31.0;
+   MaxJuillet:    31.0;
+   MaxAout:       32.0;
+   MaxSeptembre:  32.0;
+   MaxOctobre:    32.0;
+   MaxNovembre:   31.0;
+   MaxDecembre:   30.0
   ),
   (Country:       'Guyane';
    Latitude:      3;
@@ -4129,31 +4131,31 @@ Const
    AvgNovembre:   27.2;
    AvgDecembre:   26.7;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    23.0;
+   MinFevrier:    24.0;
+   MinMars:       24.0;
+   MinAvril:      24.0;
+   MinMai:        24.0;
+   MinJuin:       23.0;
+   MinJuillet:    22.0;
+   MinAout:       22.0;
+   MinSeptembre:  22.0;
+   MinOctobre:    22.0;
+   MinNovembre:   23.0;
+   MinDecembre:   23.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    29.0;
+   MaxFevrier:    29.0;
+   MaxMars:       30.0;
+   MaxAvril:      30.0;
+   MaxMai:        30.0;
+   MaxJuin:       30.0;
+   MaxJuillet:    31.0;
+   MaxAout:       32.0;
+   MaxSeptembre:  32.0;
+   MaxOctobre:    32.0;
+   MaxNovembre:   32.0;
+   MaxDecembre:   30.0
   ),
   (Country:       'Haiti';
    Latitude:      19;
@@ -4177,31 +4179,31 @@ Const
    AvgNovembre:   27.5;
    AvgDecembre:   26.8;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    23.0;
+   MinFevrier:    22.0;
+   MinMars:       22.0;
+   MinAvril:      23.0;
+   MinMai:        23.0;
+   MinJuin:       24.0;
+   MinJuillet:    25.0;
+   MinAout:       24.0;
+   MinSeptembre:  24.0;
+   MinOctobre:    24.0;
+   MinNovembre:   23.0;
+   MinDecembre:   22.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    31.0;
+   MaxFevrier:    32.0;
+   MaxMars:       32.0;
+   MaxAvril:      32.0;
+   MaxMai:        33.0;
+   MaxJuin:       34.0;
+   MaxJuillet:    35.0;
+   MaxAout:       35.0;
+   MaxSeptembre:  34.0;
+   MaxOctobre:    33.0;
+   MaxNovembre:   32.0;
+   MaxDecembre:   32.0
   ),
   (Country:       'Honduras';
    Latitude:      14;
@@ -4225,31 +4227,31 @@ Const
    AvgNovembre:   21.0;
    AvgDecembre:   20.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    14.0;
+   MinFevrier:    15.0;
+   MinMars:       16.0;
+   MinAvril:      17.0;
+   MinMai:        18.0;
+   MinJuin:       18.0;
+   MinJuillet:    18.0;
+   MinAout:       18.0;
+   MinSeptembre:  18.0;
+   MinOctobre:    18.0;
+   MinNovembre:   16.0;
+   MinDecembre:   15.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    26.0;
+   MaxFevrier:    27.0;
+   MaxMars:       30.0;
+   MaxAvril:      30.0;
+   MaxMai:        30.0;
+   MaxJuin:       29.0;
+   MaxJuillet:    28.0;
+   MaxAout:       29.0;
+   MaxSeptembre:  29.0;
+   MaxOctobre:    27.0;
+   MaxNovembre:   26.0;
+   MaxDecembre:   25.0
   ),
   (Country:       'Hong Kong';
    Latitude:      22;
@@ -4273,31 +4275,31 @@ Const
    AvgNovembre:   22.0;
    AvgDecembre:   18.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    15.0;
+   MinFevrier:    15.0;
+   MinMars:       17.0;
+   MinAvril:      21.0;
+   MinMai:        24.0;
+   MinJuin:       26.0;
+   MinJuillet:    27.0;
+   MinAout:       27.0;
+   MinSeptembre:  26.0;
+   MinOctobre:    24.0;
+   MinNovembre:   20.0;
+   MinDecembre:   16.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    19.0;
+   MaxFevrier:    19.0;
+   MaxMars:       21.0;
+   MaxAvril:      25.0;
+   MaxMai:        28.0;
+   MaxJuin:       30.0;
+   MaxJuillet:    31.0;
+   MaxAout:       31.0;
+   MaxSeptembre:  30.0;
+   MaxOctobre:    28.0;
+   MaxNovembre:   24.0;
+   MaxDecembre:   20.0
   ),
   (Country:       'Hongrie';
    Latitude:      47;
@@ -4321,31 +4323,31 @@ Const
    AvgNovembre:   5.4;
    AvgDecembre:   0.3;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
+   MinJanvier:    -4.0;
+   MinFevrier:    -3.0;
    MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinAvril:      5.0;
+   MinMai:        10.0;
+   MinJuin:       14.0;
+   MinJuillet:    15.0;
+   MinAout:       15.0;
+   MinSeptembre:  10.0;
+   MinOctobre:    5.0;
+   MinNovembre:   2.0;
+   MinDecembre:   -3.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    3.0;
+   MaxFevrier:    6.0;
+   MaxMars:       11.0;
+   MaxAvril:      17.0;
+   MaxMai:        22.0;
+   MaxJuin:       26.0;
+   MaxJuillet:    28.0;
+   MaxAout:       28.0;
+   MaxSeptembre:  22.0;
+   MaxOctobre:    16.0;
+   MaxNovembre:   9.0;
+   MaxDecembre:   3.0
   ),
   (Country:       'Ile Bouvet';
    Latitude:      54;
@@ -4370,30 +4372,30 @@ Const
    AvgDecembre:   1.5;
 
    MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinFevrier:    0.2;
+   MinMars:       -0.1;
+   MinAvril:      -0.6;
+   MinMai:        -2.2;
+   MinJuin:       -4.0;
+   MinJuillet:    -5.2;
+   MinAout:       -5.4;
+   MinSeptembre:  -5.2;
+   MinOctobre:    -3.5;
+   MinNovembre:   -2.1;
+   MinDecembre:   -0.8;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    4.2;
+   MaxFevrier:    4.8;
+   MaxMars:       4.8;
+   MaxAvril:      3.8;
+   MaxMai:        1.6;
+   MaxJuin:       -0.5;
+   MaxJuillet:    -1.3;
+   MaxAout:       -0.8;
+   MaxSeptembre:  -0.6;
+   MaxOctobre:    1.0;
+   MaxNovembre:   2.1;
+   MaxDecembre:   3.8
   ),
   (Country:       'Ile Christmas';
    Latitude:      10;
@@ -4417,31 +4419,31 @@ Const
    AvgNovembre:   25.0;
    AvgDecembre:   25.5;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    23.0;
+   MinFevrier:    23.0;
+   MinMars:       23.0;
+   MinAvril:      23.0;
+   MinMai:        24.0;
+   MinJuin:       23.0;
+   MinJuillet:    23.0;
+   MinAout:       22.0;
+   MinSeptembre:  22.0;
+   MinOctobre:    23.0;
+   MinNovembre:   23.0;
+   MinDecembre:   23.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    28.0;
+   MaxFevrier:    28.0;
+   MaxMars:       28.0;
+   MaxAvril:      28.0;
+   MaxMai:        28.0;
+   MaxJuin:       27.0;
+   MaxJuillet:    26.0;
+   MaxAout:       26.0;
+   MaxSeptembre:  26.0;
+   MaxOctobre:    27.0;
+   MaxNovembre:   27.0;
+   MaxDecembre:   28.0
   ),
   (Country:       'Ile de Man';
    Latitude:      54;
@@ -4465,31 +4467,31 @@ Const
    AvgNovembre:   12.0;
    AvgDecembre:   10.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    3.0;
+   MinFevrier:    3.0;
+   MinMars:       3.0;
+   MinAvril:      5.0;
+   MinMai:        7.0;
+   MinJuin:       9.0;
+   MinJuillet:    11.0;
+   MinAout:       12.0;
+   MinSeptembre:  11.0;
+   MinOctobre:    8.0;
+   MinNovembre:   6.0;
+   MinDecembre:   4.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    7.0;
+   MaxFevrier:    7.0;
+   MaxMars:       8.0;
+   MaxAvril:      10.0;
+   MaxMai:        13.0;
+   MaxJuin:       14.0;
+   MaxJuillet:    17.0;
+   MaxAout:       17.0;
+   MaxSeptembre:  15.0;
+   MaxOctobre:    12.0;
+   MaxNovembre:   10.0;
+   MaxDecembre:   8.0
   ),
   (Country:       'Ile Heard';
    Latitude:      53;
@@ -4513,31 +4515,31 @@ Const
    AvgNovembre:   1.9;
    AvgDecembre:   3.6;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    3.0;
+   MinFevrier:    3.1;
+   MinMars:       2.8;
+   MinAvril:      1.9;
+   MinMai:        0.7;
+   MinJuin:       -0.6;
+   MinJuillet:    -1.1;
+   MinAout:       -1.4;
+   MinSeptembre:  -1.1;
+   MinOctobre:    -0.2;
+   MinNovembre:   0.7;
+   MinDecembre:   2.1;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    6.4;
+   MaxFevrier:    6.5;
+   MaxMars:       6.3;
+   MaxAvril:      5.3;
+   MaxMai:        3.7;
+   MaxJuin:       2.3;
+   MaxJuillet:    2.2;
+   MaxAout:       2.2;
+   MaxSeptembre:  2.2;
+   MaxOctobre:    3.3;
+   MaxNovembre:   4.1;
+   MaxDecembre:   5.4
   ),
   (Country:       'Ile Norfolk';
    Latitude:      29;
@@ -4561,31 +4563,31 @@ Const
    AvgNovembre:   19.0;
    AvgDecembre:   20.5;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    19.0;
+   MinFevrier:    20.0;
+   MinMars:       19.0;
+   MinAvril:      18.0;
+   MinMai:        16.0;
+   MinJuin:       15.0;
+   MinJuillet:    13.0;
+   MinAout:       13.0;
+   MinSeptembre:  13.0;
+   MinOctobre:    15.0;
+   MinNovembre:   16.0;
+   MinDecembre:   18.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    25.0;
+   MaxFevrier:    25.0;
+   MaxMars:       24.0;
+   MaxAvril:      22.0;
+   MaxMai:        20.0;
+   MaxJuin:       19.0;
+   MaxJuillet:    18.0;
+   MaxAout:       18.0;
+   MaxSeptembre:  19.0;
+   MaxOctobre:    20.0;
+   MaxNovembre:   22.0;
+   MaxDecembre:   23.0
   ),
   (Country:       'Iles Aland';
    Latitude:      60;
@@ -4609,31 +4611,31 @@ Const
    AvgNovembre:   3.0;
    AvgDecembre:   0.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
+   MinJanvier:    -5.0;
+   MinFevrier:    -6.0;
+   MinMars:       -4.0;
    MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
+   MinMai:        4.0;
+   MinJuin:       8.0;
+   MinJuillet:    12.0;
+   MinAout:       11.0;
+   MinSeptembre:  7.0;
+   MinOctobre:    4.0;
    MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinDecembre:   -3.0;
 
    MaxJanvier:    0.0;
    MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxMars:       2.0;
+   MaxAvril:      7.0;
+   MaxMai:        13.0;
+   MaxJuin:       17.0;
+   MaxJuillet:    20.0;
+   MaxAout:       19.0;
+   MaxSeptembre:  14.0;
+   MaxOctobre:    9.0;
+   MaxNovembre:   5.0;
+   MaxDecembre:   2.0
   ),
   (Country:       'Iles Caimans';
    Latitude:      19;
@@ -4657,31 +4659,31 @@ Const
    AvgNovembre:   27.2;
    AvgDecembre:   26.4;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    23.0;
+   MinFevrier:    23.0;
+   MinMars:       23.0;
+   MinAvril:      24.0;
+   MinMai:        25.0;
+   MinJuin:       26.0;
+   MinJuillet:    26.0;
+   MinAout:       26.0;
+   MinSeptembre:  26.0;
+   MinOctobre:    25.0;
+   MinNovembre:   24.0;
+   MinDecembre:   23.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    29.0;
+   MaxFevrier:    29.0;
+   MaxMars:       29.0;
+   MaxAvril:      30.0;
+   MaxMai:        31.0;
+   MaxJuin:       32.0;
+   MaxJuillet:    32.0;
+   MaxAout:       32.0;
+   MaxSeptembre:  32.0;
+   MaxOctobre:    31.0;
+   MaxNovembre:   30.0;
+   MaxDecembre:   29.0
   ),
   (Country:       'Iles Cocos';
    Latitude:      12;
@@ -4705,31 +4707,31 @@ Const
    AvgNovembre:   26.0;
    AvgDecembre:   26.5;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    24.0;
+   MinFevrier:    25.0;
+   MinMars:       25.0;
+   MinAvril:      25.0;
+   MinMai:        25.0;
+   MinJuin:       24.0;
+   MinJuillet:    23.0;
+   MinAout:       23.0;
+   MinSeptembre:  23.0;
+   MinOctobre:    23.0;
+   MinNovembre:   24.0;
+   MinDecembre:   24.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    29.0;
+   MaxFevrier:    30.0;
+   MaxMars:       30.0;
+   MaxAvril:      29.0;
+   MaxMai:        28.0;
+   MaxJuin:       28.0;
+   MaxJuillet:    27.0;
+   MaxAout:       27.0;
+   MaxSeptembre:  28.0;
+   MaxOctobre:    28.0;
+   MaxNovembre:   28.0;
+   MaxDecembre:   29.0
   ),
   (Country:       'Iles Cook';
    Latitude:      15;
@@ -4740,44 +4742,44 @@ Const
    LongDirection: 'O';
    Superficie:    240;
    Capital:       'Avarua';
-   AvgJanvier:    27.5;
-   AvgFevrier:    27.5;
-   AvgMars:       28.0;
-   AvgAvril:      28.0;
-   AvgMai:        28.0;
-   AvgJuin:       27.0;
-   AvgJuillet:    27.0;
-   AvgAout:       27.0;
-   AvgSeptembre:  27.0;
-   AvgOctobre:    27.5;
-   AvgNovembre:   27.5;
-   AvgDecembre:   27.0;
+   AvgJanvier:    25.5;
+   AvgFevrier:    26.0;
+   AvgMars:       26.0;
+   AvgAvril:      25.0;
+   AvgMai:        24.0;
+   AvgJuin:       23.0;
+   AvgJuillet:    22.0;
+   AvgAout:       22.0;
+   AvgSeptembre:  22.5;
+   AvgOctobre:    23.0;
+   AvgNovembre:   24.0;
+   AvgDecembre:   25.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    23.0;
+   MinFevrier:    23.0;
+   MinMars:       23.0;
+   MinAvril:      22.0;
+   MinMai:        21.0;
+   MinJuin:       20.0;
+   MinJuillet:    19.0;
+   MinAout:       19.0;
+   MinSeptembre:  19.0;
+   MinOctobre:    20.0;
+   MinNovembre:   21.0;
+   MinDecembre:   22.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    28.0;
+   MaxFevrier:    29.0;
+   MaxMars:       29.0;
+   MaxAvril:      28.0;
+   MaxMai:        27.0;
+   MaxJuin:       26.0;
+   MaxJuillet:    25.0;
+   MaxAout:       25.0;
+   MaxSeptembre:  26.0;
+   MaxOctobre:    26.0;
+   MaxNovembre:   27.0;
+   MaxDecembre:   28.0
   ),
   (Country:       'Iles Feroe';
    Latitude:      61;
@@ -4801,31 +4803,31 @@ Const
    AvgNovembre:   5.3;
    AvgDecembre:   4.2;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    2.0;
+   MinFevrier:    1.0;
+   MinMars:       2.0;
+   MinAvril:      3.0;
+   MinMai:        5.0;
+   MinJuin:       7.0;
+   MinJuillet:    9.0;
+   MinAout:       9.0;
+   MinSeptembre:  8.0;
+   MinOctobre:    5.0;
+   MinNovembre:   3.0;
+   MinDecembre:   2.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    6.0;
+   MaxFevrier:    6.0;
+   MaxMars:       6.0;
+   MaxAvril:      7.0;
+   MaxMai:        9.0;
+   MaxJuin:       11.0;
+   MaxJuillet:    13.0;
+   MaxAout:       13.0;
+   MaxSeptembre:  12.0;
+   MaxOctobre:    9.0;
+   MaxNovembre:   7.0;
+   MaxDecembre:   6.0
   ),
   (Country:       'Iles Malouines';
    Latitude:      51;
@@ -4849,31 +4851,31 @@ Const
    AvgNovembre:   8.7;
    AvgDecembre:   10.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
+   MinJanvier:    7.0;
+   MinFevrier:    6.0;
+   MinMars:       6.0;
+   MinAvril:      4.0;
+   MinMai:        2.0;
    MinJuin:       0.0;
    MinJuillet:    0.0;
    MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinSeptembre:  1.0;
+   MinOctobre:    2.0;
+   MinNovembre:   4.0;
+   MinDecembre:   5.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    16.0;
+   MaxFevrier:    16.0;
+   MaxMars:       14.0;
+   MaxAvril:      11.0;
+   MaxMai:        8.0;
+   MaxJuin:       5.0;
+   MaxJuillet:    5.0;
+   MaxAout:       6.0;
+   MaxSeptembre:  8.0;
+   MaxOctobre:    11.0;
+   MaxNovembre:   14.0;
+   MaxDecembre:   15.0
   ),
   (Country:       'Iles Mariannes du Nord';
    Latitude:      17;
@@ -4897,31 +4899,31 @@ Const
    AvgNovembre:   27.5;
    AvgDecembre:   27.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    24.0;
+   MinFevrier:    23.0;
+   MinMars:       24.0;
+   MinAvril:      25.0;
+   MinMai:        25.0;
+   MinJuin:       26.0;
+   MinJuillet:    25.0;
+   MinAout:       25.0;
+   MinSeptembre:  25.0;
+   MinOctobre:    25.0;
+   MinNovembre:   25.0;
+   MinDecembre:   25.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    28.0;
+   MaxFevrier:    28.0;
+   MaxMars:       29.0;
+   MaxAvril:      30.0;
+   MaxMai:        30.0;
+   MaxJuin:       31.0;
+   MaxJuillet:    30.0;
+   MaxAout:       30.0;
+   MaxSeptembre:  30.0;
+   MaxOctobre:    30.0;
+   MaxNovembre:   30.0;
+   MaxDecembre:   29.0
   ),
   (Country:       'Iles Marshall';
    Latitude:      10;
@@ -4945,31 +4947,31 @@ Const
    AvgNovembre:   27.5;
    AvgDecembre:   27.5;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    25.0;
+   MinFevrier:    25.0;
+   MinMars:       25.0;
+   MinAvril:      25.0;
+   MinMai:        25.0;
+   MinJuin:       25.0;
+   MinJuillet:    25.0;
+   MinAout:       25.0;
+   MinSeptembre:  25.0;
+   MinOctobre:    25.0;
+   MinNovembre:   25.0;
+   MinDecembre:   25.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    30.0;
+   MaxFevrier:    30.0;
+   MaxMars:       30.0;
+   MaxAvril:      30.0;
+   MaxMai:        30.0;
+   MaxJuin:       30.0;
+   MaxJuillet:    30.0;
+   MaxAout:       30.0;
+   MaxSeptembre:  30.0;
+   MaxOctobre:    30.0;
+   MaxNovembre:   30.0;
+   MaxDecembre:   30.0
   ),
   (Country:       'Iles mineures';
    Latitude:      13;
@@ -4993,31 +4995,31 @@ Const
    AvgNovembre:   29.0;
    AvgDecembre:   28.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    28.0;
+   MinFevrier:    27.0;
+   MinMars:       27.0;
+   MinAvril:      28.0;
+   MinMai:        28.0;
+   MinJuin:       28.0;
+   MinJuillet:    28.0;
+   MinAout:       28.0;
+   MinSeptembre:  28.0;
+   MinOctobre:    28.0;
+   MinNovembre:   28.0;
+   MinDecembre:   28.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    28.0;
+   MaxFevrier:    28.0;
+   MaxMars:       28.0;
+   MaxAvril:      28.0;
+   MaxMai:        29.0;
+   MaxJuin:       29.0;
+   MaxJuillet:    29.0;
+   MaxAout:       29.0;
+   MaxSeptembre:  29.0;
+   MaxOctobre:    29.0;
+   MaxNovembre:   29.0;
+   MaxDecembre:   28.0
   ),
   (Country:       'Iles Salomon';
    Latitude:      9;
@@ -5041,31 +5043,31 @@ Const
    AvgNovembre:   26.0;
    AvgDecembre:   26.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    23.0;
+   MinFevrier:    23.0;
+   MinMars:       22.0;
+   MinAvril:      22.0;
+   MinMai:        22.0;
+   MinJuin:       21.0;
+   MinJuillet:    21.0;
+   MinAout:       21.0;
+   MinSeptembre:  21.0;
+   MinOctobre:    22.0;
+   MinNovembre:   22.0;
+   MinDecembre:   22.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    30.0;
+   MaxFevrier:    30.0;
+   MaxMars:       30.0;
+   MaxAvril:      30.0;
+   MaxMai:        30.0;
+   MaxJuin:       30.0;
+   MaxJuillet:    30.0;
+   MaxAout:       30.0;
+   MaxSeptembre:  30.0;
+   MaxOctobre:    30.0;
+   MaxNovembre:   30.0;
+   MaxDecembre:   30.0
   ),
   (Country:       'Iles Turques-et-Caiques';
    Latitude:      21;
@@ -5089,31 +5091,31 @@ Const
    AvgNovembre:   25.5;
    AvgDecembre:   24.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    20.0;
+   MinFevrier:    20.0;
+   MinMars:       20.0;
+   MinAvril:      21.0;
+   MinMai:        22.0;
+   MinJuin:       23.0;
+   MinJuillet:    24.0;
+   MinAout:       24.0;
+   MinSeptembre:  23.0;
+   MinOctobre:    23.0;
+   MinNovembre:   22.0;
+   MinDecembre:   21.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    27.0;
+   MaxFevrier:    27.0;
+   MaxMars:       28.0;
+   MaxAvril:      29.0;
+   MaxMai:        30.0;
+   MaxJuin:       31.0;
+   MaxJuillet:    32.0;
+   MaxAout:       32.0;
+   MaxSeptembre:  32.0;
+   MaxOctobre:    31.0;
+   MaxNovembre:   29.0;
+   MaxDecembre:   27.0
   ),
   (Country:       'Iles Vierges';
    Latitude:      18;
@@ -5137,31 +5139,31 @@ Const
    AvgNovembre:   27.8;
    AvgDecembre:   26.9;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    24.0;
+   MinFevrier:    24.0;
+   MinMars:       24.0;
+   MinAvril:      25.0;
+   MinMai:        26.0;
+   MinJuin:       27.0;
+   MinJuillet:    27.0;
+   MinAout:       27.0;
+   MinSeptembre:  27.0;
+   MinOctobre:    27.0;
+   MinNovembre:   26.0;
+   MinDecembre:   25.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    29.0;
+   MaxFevrier:    29.0;
+   MaxMars:       29.0;
+   MaxAvril:      30.0;
+   MaxMai:        30.0;
+   MaxJuin:       31.0;
+   MaxJuillet:    32.0;
+   MaxAout:       32.0;
+   MaxSeptembre:  31.0;
+   MaxOctobre:    31.0;
+   MaxNovembre:   30.0;
+   MaxDecembre:   29.0
   ),
   (Country:       'Iles Vierges des Etats-Unis';
    Latitude:      18;
@@ -5185,31 +5187,31 @@ Const
    AvgNovembre:   27.6;
    AvgDecembre:   26.7;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    23.0;
+   MinFevrier:    23.0;
+   MinMars:       23.0;
+   MinAvril:      24.0;
+   MinMai:        25.0;
+   MinJuin:       26.0;
+   MinJuillet:    26.0;
+   MinAout:       26.0;
+   MinSeptembre:  26.0;
+   MinOctobre:    26.0;
+   MinNovembre:   25.0;
+   MinDecembre:   24.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    29.0;
+   MaxFevrier:    29.0;
+   MaxMars:       29.0;
+   MaxAvril:      30.0;
+   MaxMai:        31.0;
+   MaxJuin:       32.0;
+   MaxJuillet:    32.0;
+   MaxAout:       32.0;
+   MaxSeptembre:  32.0;
+   MaxOctobre:    31.0;
+   MaxNovembre:   30.0;
+   MaxDecembre:   30.0
   ),
   (Country:       'Inde';
    Latitude:      21;
@@ -5233,31 +5235,31 @@ Const
    AvgNovembre:   20.6;
    AvgDecembre:   15.6;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    8.0;
+   MinFevrier:    11.0;
+   MinMars:       16.0;
+   MinAvril:      21.0;
+   MinMai:        26.0;
+   MinJuin:       28.0;
+   MinJuillet:    27.0;
+   MinAout:       27.0;
+   MinSeptembre:  25.0;
+   MinOctobre:    19.0;
+   MinNovembre:   13.0;
+   MinDecembre:   8.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    20.0;
+   MaxFevrier:    25.0;
+   MaxMars:       30.0;
+   MaxAvril:      37.0;
+   MaxMai:        40.0;
+   MaxJuin:       39.0;
+   MaxJuillet:    36.0;
+   MaxAout:       34.0;
+   MaxSeptembre:  34.0;
+   MaxOctobre:    33.0;
+   MaxNovembre:   28.0;
+   MaxDecembre:   23.0
   ),
   (Country:       'Indonesie';
    Latitude:      2;
@@ -5281,31 +5283,31 @@ Const
    AvgNovembre:   28.3;
    AvgDecembre:   27.9;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    24.0;
+   MinFevrier:    24.0;
+   MinMars:       24.0;
+   MinAvril:      24.0;
+   MinMai:        24.0;
+   MinJuin:       24.0;
+   MinJuillet:    23.0;
+   MinAout:       23.0;
+   MinSeptembre:  24.0;
+   MinOctobre:    24.0;
+   MinNovembre:   24.0;
+   MinDecembre:   24.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    31.0;
+   MaxFevrier:    30.0;
+   MaxMars:       32.0;
+   MaxAvril:      32.0;
+   MaxMai:        33.0;
+   MaxJuin:       32.0;
+   MaxJuillet:    32.0;
+   MaxAout:       33.0;
+   MaxSeptembre:  33.0;
+   MaxOctobre:    33.0;
+   MaxNovembre:   32.0;
+   MaxDecembre:   32.0
   ),
   (Country:       'Irak';
    Latitude:      33;
@@ -5329,31 +5331,31 @@ Const
    AvgNovembre:   17.4;
    AvgDecembre:   12.3;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    5.0;
+   MinFevrier:    7.0;
+   MinMars:       11.0;
+   MinAvril:      16.0;
+   MinMai:        22.0;
+   MinJuin:       25.0;
+   MinJuillet:    28.0;
+   MinAout:       27.0;
+   MinSeptembre:  23.0;
+   MinOctobre:    18.0;
+   MinNovembre:   11.0;
+   MinDecembre:   6.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    17.0;
+   MaxFevrier:    20.0;
+   MaxMars:       25.0;
+   MaxAvril:      31.0;
+   MaxMai:        37.0;
+   MaxJuin:       42.0;
+   MaxJuillet:    45.0;
+   MaxAout:       45.0;
+   MaxSeptembre:  41.0;
+   MaxOctobre:    34.0;
+   MaxNovembre:   24.0;
+   MaxDecembre:   18.0
   ),
   (Country:       'Iran';
    Latitude:      32;
@@ -5377,31 +5379,31 @@ Const
    AvgNovembre:   11.7;
    AvgDecembre:   6.7;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    1.0;
+   MinFevrier:    3.0;
+   MinMars:       7.0;
+   MinAvril:      12.0;
+   MinMai:        17.0;
+   MinJuin:       22.0;
+   MinJuillet:    25.0;
+   MinAout:       25.0;
+   MinSeptembre:  21.0;
+   MinOctobre:    15.0;
+   MinNovembre:   8.0;
+   MinDecembre:   3.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    9.0;
+   MaxFevrier:    11.0;
+   MaxMars:       16.0;
+   MaxAvril:      22.0;
+   MaxMai:        28.0;
+   MaxJuin:       34.0;
+   MaxJuillet:    37.0;
+   MaxAout:       36.0;
+   MaxSeptembre:  32.0;
+   MaxOctobre:    25.0;
+   MaxNovembre:   16.0;
+   MaxDecembre:   10.0
   ),
   (Country:       'Irlande';
    Latitude:      53;
@@ -5425,31 +5427,31 @@ Const
    AvgNovembre:   7.3;
    AvgDecembre:   5.6;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    2.0;
+   MinFevrier:    2.0;
+   MinMars:       3.0;
+   MinAvril:      4.0;
+   MinMai:        6.0;
+   MinJuin:       9.0;
+   MinJuillet:    11.0;
+   MinAout:       11.0;
+   MinSeptembre:  9.0;
+   MinOctobre:    7.0;
+   MinNovembre:   4.0;
+   MinDecembre:   3.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    8.0;
+   MaxFevrier:    9.0;
+   MaxMars:       10.0;
+   MaxAvril:      12.0;
+   MaxMai:        15.0;
+   MaxJuin:       18.0;
+   MaxJuillet:    19.0;
+   MaxAout:       19.0;
+   MaxSeptembre:  17.0;
+   MaxOctobre:    14.0;
+   MaxNovembre:   10.0;
+   MaxDecembre:   9.0
   ),
   (Country:       'Islande';
    Latitude:      64;
@@ -5473,31 +5475,31 @@ Const
    AvgNovembre:   2.2;
    AvgDecembre:   0.8;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    -2.0;
+   MinFevrier:    -2.0;
+   MinMars:       -2.0;
+   MinAvril:      1.0;
+   MinMai:        4.0;
+   MinJuin:       7.0;
+   MinJuillet:    9.0;
+   MinAout:       9.0;
+   MinSeptembre:  6.0;
+   MinOctobre:    2.0;
+   MinNovembre:   -1.0;
+   MinDecembre:   -2.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    3.0;
+   MaxFevrier:    3.0;
+   MaxMars:       4.0;
+   MaxAvril:      7.0;
+   MaxMai:        10.0;
+   MaxJuin:       13.0;
+   MaxJuillet:    15.0;
+   MaxAout:       14.0;
+   MaxSeptembre:  12.0;
+   MaxOctobre:    8.0;
+   MaxNovembre:   5.0;
+   MaxDecembre:   4.0
   ),
   (Country:       'Israel';
    Latitude:      31;
@@ -5521,31 +5523,31 @@ Const
    AvgNovembre:   15.9;
    AvgDecembre:   11.5;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    7.0;
+   MinFevrier:    7.0;
+   MinMars:       9.0;
+   MinAvril:      12.0;
+   MinMai:        16.0;
+   MinJuin:       18.0;
+   MinJuillet:    20.0;
+   MinAout:       20.0;
+   MinSeptembre:  19.0;
+   MinOctobre:    17.0;
+   MinNovembre:   12.0;
+   MinDecembre:   9.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    12.0;
+   MaxFevrier:    13.0;
+   MaxMars:       16.0;
+   MaxAvril:      22.0;
+   MaxMai:        26.0;
+   MaxJuin:       28.0;
+   MaxJuillet:    29.0;
+   MaxAout:       30.0;
+   MaxSeptembre:  28.0;
+   MaxOctobre:    25.0;
+   MaxNovembre:   19.0;
+   MaxDecembre:   14.0
   ),
   (Country:       'Italie';
    Latitude:      41;
@@ -5569,31 +5571,31 @@ Const
    AvgNovembre:   12.7;
    AvgDecembre:   8.7;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    4.0;
+   MinFevrier:    4.0;
+   MinMars:       6.0;
+   MinAvril:      9.0;
+   MinMai:        13.0;
+   MinJuin:       17.0;
+   MinJuillet:    19.0;
+   MinAout:       20.0;
+   MinSeptembre:  16.0;
+   MinOctobre:    13.0;
+   MinNovembre:   9.0;
+   MinDecembre:   5.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    12.0;
+   MaxFevrier:    13.0;
+   MaxMars:       16.0;
+   MaxAvril:      19.0;
+   MaxMai:        23.0;
+   MaxJuin:       28.0;
+   MaxJuillet:    31.0;
+   MaxAout:       31.0;
+   MaxSeptembre:  27.0;
+   MaxOctobre:    22.0;
+   MaxNovembre:   17.0;
+   MaxDecembre:   13.0
   ),
   (Country:       'Jamaique';
    Latitude:      18;
@@ -5617,18 +5619,18 @@ Const
    AvgNovembre:   28.2;
    AvgDecembre:   27.4;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    23.0;
+   MinFevrier:    23.0;
+   MinMars:       23.0;
+   MinAvril:      24.0;
+   MinMai:        25.0;
+   MinJuin:       26.0;
+   MinJuillet:    26.0;
+   MinAout:       26.0;
+   MinSeptembre:  25.0;
+   MinOctobre:    25.0;
+   MinNovembre:   24.0;
+   MinDecembre:   23.0;
 
    MaxJanvier:    0.0;
    MaxFevrier:    0.0;
@@ -5665,31 +5667,31 @@ Const
    AvgNovembre:   13.3;
    AvgDecembre:   8.4;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    2.0;
+   MinFevrier:    3.0;
+   MinMars:       5.0;
+   MinAvril:      10.0;
+   MinMai:        15.0;
+   MinJuin:       19.0;
+   MinJuillet:    23.0;
+   MinAout:       24.0;
+   MinSeptembre:  21.0;
+   MinOctobre:    15.0;
+   MinNovembre:   10.0;
+   MinDecembre:   5.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    10.0;
+   MaxFevrier:    11.0;
+   MaxMars:       14.0;
+   MaxAvril:      19.0;
+   MaxMai:        23.0;
+   MaxJuin:       26.0;
+   MaxJuillet:    30.0;
+   MaxAout:       31.0;
+   MaxSeptembre:  28.0;
+   MaxOctobre:    22.0;
+   MaxNovembre:   17.0;
+   MaxDecembre:   12.0
   ),
   (Country:       'Jersey';
    Latitude:      49;
@@ -5700,44 +5702,44 @@ Const
    LongDirection: 'O';
    Superficie:    116;
    Capital:       'Saint Helier';
-   AvgJanvier:    8.3;
-   AvgFevrier:    8.4;
-   AvgMars:       10.4;
-   AvgAvril:      12.5;
-   AvgMai:        15.8;
-   AvgJuin:       18.4;
-   AvgJuillet:    20.4;
-   AvgAout:       20.6;
-   AvgSeptembre:  18.7;
-   AvgOctobre:    15.4;
-   AvgNovembre:   11.7;
-   AvgDecembre:   9.2;
+   AvgJanvier:    6.7;
+   AvgFevrier:    6.5;
+   AvgMars:       8.0;
+   AvgAvril:      10.0;
+   AvgMai:        12.6;
+   AvgJuin:       15.2;
+   AvgJuillet:    17.1;
+   AvgAout:       17.5;
+   AvgSeptembre:  15.9;
+   AvgOctobre:    13.1;
+   AvgNovembre:   9.9;
+   AvgDecembre:   7.5;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    5.0;
+   MinFevrier:    4.0;
+   MinMars:       5.0;
+   MinAvril:      7.0;
+   MinMai:        9.0;
+   MinJuin:       12.0;
+   MinJuillet:    14.0;
+   MinAout:       14.0;
+   MinSeptembre:  13.0;
+   MinOctobre:    11.0;
+   MinNovembre:   8.0;
+   MinDecembre:   5.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    9.0;
+   MaxFevrier:    9.0;
+   MaxMars:       11.0;
+   MaxAvril:      13.0;
+   MaxMai:        16.0;
+   MaxJuin:       19.0;
+   MaxJuillet:    20.0;
+   MaxAout:       21.0;
+   MaxSeptembre:  19.0;
+   MaxOctobre:    16.0;
+   MaxNovembre:   12.0;
+   MaxDecembre:   10.0
   ),
   (Country:       'Jordanie';
    Latitude:      31;
@@ -5761,31 +5763,31 @@ Const
    AvgNovembre:   15.2;
    AvgDecembre:   10.4;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    4.0;
+   MinFevrier:    5.0;
+   MinMars:       8.0;
+   MinAvril:      11.0;
+   MinMai:        15.0;
+   MinJuin:       18.0;
+   MinJuillet:    21.0;
+   MinAout:       21.0;
+   MinSeptembre:  19.0;
+   MinOctobre:    15.0;
+   MinNovembre:   10.0;
+   MinDecembre:   6.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    13.0;
+   MaxFevrier:    14.0;
+   MaxMars:       18.0;
+   MaxAvril:      23.0;
+   MaxMai:        28.0;
+   MaxJuin:       31.0;
+   MaxJuillet:    33.0;
+   MaxAout:       33.0;
+   MaxSeptembre:  31.0;
+   MaxOctobre:    27.0;
+   MaxNovembre:   20.0;
+   MaxDecembre:   15.0
   ),
   (Country:       'Kazakhstan';
    Latitude:      48;
@@ -5809,31 +5811,31 @@ Const
    AvgNovembre:   -5.2;
    AvgDecembre:   -12.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
+   MinJanvier:    -18.0;
+   MinFevrier:    -18.0;
+   MinMars:       -12.0;
    MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
+   MinMai:        8.0;
+   MinJuin:       13.0;
+   MinJuillet:    15.0;
+   MinAout:       13.0;
+   MinSeptembre:  7.0;
    MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinNovembre:   -9.0;
+   MinDecembre:   -16.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    -10.0;
+   MaxFevrier:    -9.0;
+   MaxMars:       -2.0;
+   MaxAvril:      11.0;
+   MaxMai:        20.0;
+   MaxJuin:       26.0;
+   MaxJuillet:    27.0;
+   MaxAout:       25.0;
+   MaxSeptembre:  19.0;
+   MaxOctobre:    10.0;
+   MaxNovembre:   -1.0;
+   MaxDecembre:   -8.0
   ),
   (Country:       'Kenya';
    Latitude:      0;
@@ -5857,31 +5859,31 @@ Const
    AvgNovembre:   20.1;
    AvgDecembre:   20.1;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    14.0;
+   MinFevrier:    14.0;
+   MinMars:       15.0;
+   MinAvril:      15.0;
+   MinMai:        15.0;
+   MinJuin:       13.0;
+   MinJuillet:    12.0;
+   MinAout:       12.0;
+   MinSeptembre:  13.0;
+   MinOctobre:    14.0;
+   MinNovembre:   15.0;
+   MinDecembre:   15.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    27.0;
+   MaxFevrier:    28.0;
+   MaxMars:       28.0;
+   MaxAvril:      26.0;
+   MaxMai:        25.0;
+   MaxJuin:       24.0;
+   MaxJuillet:    23.0;
+   MaxAout:       24.0;
+   MaxSeptembre:  26.0;
+   MaxOctobre:    27.0;
+   MaxNovembre:   25.0;
+   MaxDecembre:   26.0
   ),
   (Country:       'Kirghizistan';
    Latitude:      41;
@@ -5905,31 +5907,31 @@ Const
    AvgNovembre:   5.4;
    AvgDecembre:   0.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
+   MinJanvier:    -7.0;
+   MinFevrier:    -5.0;
    MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
+   MinAvril:      6.0;
+   MinMai:        11.0;
+   MinJuin:       16.0;
+   MinJuillet:    18.0;
+   MinAout:       16.0;
+   MinSeptembre:  11.0;
+   MinOctobre:    5.0;
    MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinDecembre:   -5.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    3.0;
+   MaxFevrier:    5.0;
+   MaxMars:       11.0;
+   MaxAvril:      18.0;
+   MaxMai:        24.0;
+   MaxJuin:       29.0;
+   MaxJuillet:    32.0;
+   MaxAout:       31.0;
+   MaxSeptembre:  26.0;
+   MaxOctobre:    18.0;
+   MaxNovembre:   11.0;
+   MaxDecembre:   5.0
   ),
   (Country:       'Kiribati';
    Latitude:      3;
@@ -5953,31 +5955,31 @@ Const
    AvgNovembre:   28.0;
    AvgDecembre:   28.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    25.0;
+   MinFevrier:    25.0;
+   MinMars:       25.0;
+   MinAvril:      25.0;
+   MinMai:        25.0;
+   MinJuin:       25.0;
+   MinJuillet:    25.0;
+   MinAout:       25.0;
+   MinSeptembre:  25.0;
+   MinOctobre:    25.0;
+   MinNovembre:   25.0;
+   MinDecembre:   25.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    31.0;
+   MaxFevrier:    31.0;
+   MaxMars:       31.0;
+   MaxAvril:      31.0;
+   MaxMai:        31.0;
+   MaxJuin:       31.0;
+   MaxJuillet:    31.0;
+   MaxAout:       31.0;
+   MaxSeptembre:  31.0;
+   MaxOctobre:    31.0;
+   MaxNovembre:   31.0;
+   MaxDecembre:   31.0
   ),
   (Country:       'Kosovo';
    Latitude:      42;
@@ -6001,31 +6003,31 @@ Const
    AvgNovembre:   8.0;
    AvgDecembre:   2.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    -3.0;
+   MinFevrier:    -2.0;
+   MinMars:       2.0;
+   MinAvril:      5.0;
+   MinMai:        10.0;
+   MinJuin:       13.0;
+   MinJuillet:    15.0;
+   MinAout:       15.0;
+   MinSeptembre:  11.0;
+   MinOctobre:    6.0;
+   MinNovembre:   2.0;
+   MinDecembre:   -2.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    5.0;
+   MaxFevrier:    8.0;
+   MaxMars:       12.0;
+   MaxAvril:      18.0;
+   MaxMai:        23.0;
+   MaxJuin:       27.0;
+   MaxJuillet:    30.0;
+   MaxAout:       31.0;
+   MaxSeptembre:  25.0;
+   MaxOctobre:    19.0;
+   MaxNovembre:   13.0;
+   MaxDecembre:   6.0
   ),
   (Country:       'Koweit';
    Latitude:      29;
@@ -6049,31 +6051,31 @@ Const
    AvgNovembre:   21.2;
    AvgDecembre:   15.9;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    8.0;
+   MinFevrier:    10.0;
+   MinMars:       14.0;
+   MinAvril:      20.0;
+   MinMai:        25.0;
+   MinJuin:       29.0;
+   MinJuillet:    31.0;
+   MinAout:       30.0;
+   MinSeptembre:  26.0;
+   MinOctobre:    22.0;
+   MinNovembre:   14.0;
+   MinDecembre:   10.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    20.0;
+   MaxFevrier:    22.0;
+   MaxMars:       27.0;
+   MaxAvril:      34.0;
+   MaxMai:        41.0;
+   MaxJuin:       46.0;
+   MaxJuillet:    47.0;
+   MaxAout:       47.0;
+   MaxSeptembre:  44.0;
+   MaxOctobre:    37.0;
+   MaxNovembre:   28.0;
+   MaxDecembre:   22.0
   ),
   (Country:       'Laos';
    Latitude:      18;
@@ -6097,31 +6099,31 @@ Const
    AvgNovembre:   24.5;
    AvgDecembre:   22.5;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    16.0;
+   MinFevrier:    19.0;
+   MinMars:       22.0;
+   MinAvril:      24.0;
+   MinMai:        25.0;
+   MinJuin:       25.0;
+   MinJuillet:    25.0;
+   MinAout:       25.0;
+   MinSeptembre:  24.0;
+   MinOctobre:    23.0;
+   MinNovembre:   19.0;
+   MinDecembre:   17.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    28.0;
+   MaxFevrier:    30.0;
+   MaxMars:       33.0;
+   MaxAvril:      34.0;
+   MaxMai:        33.0;
+   MaxJuin:       32.0;
+   MaxJuillet:    31.0;
+   MaxAout:       31.0;
+   MaxSeptembre:  31.0;
+   MaxOctobre:    31.0;
+   MaxNovembre:   30.0;
+   MaxDecembre:   28.0
   ),
   (Country:       'Lesotho';
    Latitude:      29;
@@ -6145,31 +6147,31 @@ Const
    AvgNovembre:   18.5;
    AvgDecembre:   20.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    15.0;
+   MinFevrier:    14.0;
+   MinMars:       12.0;
+   MinAvril:      8.0;
+   MinMai:        4.0;
+   MinJuin:       1.0;
+   MinJuillet:    1.0;
+   MinAout:       2.0;
+   MinSeptembre:  6.0;
+   MinOctobre:    9.0;
+   MinNovembre:   11.0;
+   MinDecembre:   13.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    28.0;
+   MaxFevrier:    27.0;
+   MaxMars:       24.0;
+   MaxAvril:      21.0;
+   MaxMai:        18.0;
+   MaxJuin:       16.0;
+   MaxJuillet:    16.0;
+   MaxAout:       19.0;
+   MaxSeptembre:  23.0;
+   MaxOctobre:    24.0;
+   MaxNovembre:   26.0;
+   MaxDecembre:   27.0
   ),
   (Country:       'Lettonie';
    Latitude:      56;
@@ -6193,31 +6195,31 @@ Const
    AvgNovembre:   2.7;
    AvgDecembre:   -0.9;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
+   MinJanvier:    -6.0;
+   MinFevrier:    -5.0;
+   MinMars:       -3.0;
+   MinAvril:      1.0;
+   MinMai:        6.0;
+   MinJuin:       10.0;
+   MinJuillet:    13.0;
+   MinAout:       12.0;
+   MinSeptembre:  8.0;
+   MinOctobre:    4.0;
    MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinDecembre:   -3.0;
 
    MaxJanvier:    0.0;
    MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxMars:       5.0;
+   MaxAvril:      12.0;
+   MaxMai:        17.0;
+   MaxJuin:       21.0;
+   MaxJuillet:    24.0;
+   MaxAout:       23.0;
+   MaxSeptembre:  18.0;
+   MaxOctobre:    11.0;
+   MaxNovembre:   5.0;
+   MaxDecembre:   1.0
   ),
   (Country:       'Liban';
    Latitude:      33;
@@ -6241,31 +6243,31 @@ Const
    AvgNovembre:   20.3;
    AvgDecembre:   16.4;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    11.0;
+   MinFevrier:    11.0;
+   MinMars:       13.0;
+   MinAvril:      15.0;
+   MinMai:        19.0;
+   MinJuin:       22.0;
+   MinJuillet:    24.0;
+   MinAout:       25.0;
+   MinSeptembre:  24.0;
+   MinOctobre:    21.0;
+   MinNovembre:   17.0;
+   MinDecembre:   13.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    18.0;
+   MaxFevrier:    18.0;
+   MaxMars:       20.0;
+   MaxAvril:      23.0;
+   MaxMai:        26.0;
+   MaxJuin:       29.0;
+   MaxJuillet:    31.0;
+   MaxAout:       31.0;
+   MaxSeptembre:  30.0;
+   MaxOctobre:    28.0;
+   MaxNovembre:   24.0;
+   MaxDecembre:   20.0
   ),
   (Country:       'Liberia';
    Latitude:      6;
@@ -6289,31 +6291,31 @@ Const
    AvgNovembre:   26.5;
    AvgDecembre:   26.5;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    23.0;
+   MinFevrier:    23.0;
+   MinMars:       24.0;
+   MinAvril:      25.0;
+   MinMai:        24.0;
+   MinJuin:       23.0;
+   MinJuillet:    23.0;
+   MinAout:       23.0;
+   MinSeptembre:  23.0;
+   MinOctobre:    23.0;
+   MinNovembre:   23.0;
+   MinDecembre:   23.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    30.0;
+   MaxFevrier:    31.0;
+   MaxMars:       31.0;
+   MaxAvril:      31.0;
+   MaxMai:        30.0;
+   MaxJuin:       28.0;
+   MaxJuillet:    27.0;
+   MaxAout:       26.0;
+   MaxSeptembre:  27.0;
+   MaxOctobre:    28.0;
+   MaxNovembre:   30.0;
+   MaxDecembre:   30.0
   ),
   (Country:       'Libye';
    Latitude:      26;
@@ -6337,31 +6339,31 @@ Const
    AvgNovembre:   18.3;
    AvgDecembre:   13.8;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    7.0;
+   MinFevrier:    7.0;
+   MinMars:       10.0;
+   MinAvril:      13.0;
+   MinMai:        16.0;
+   MinJuin:       20.0;
+   MinJuillet:    21.0;
+   MinAout:       22.0;
+   MinSeptembre:  21.0;
+   MinOctobre:    18.0;
+   MinNovembre:   12.0;
+   MinDecembre:   8.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    18.0;
+   MaxFevrier:    19.0;
+   MaxMars:       23.0;
+   MaxAvril:      26.0;
+   MaxMai:        31.0;
+   MaxJuin:       34.0;
+   MaxJuillet:    36.0;
+   MaxAout:       36.0;
+   MaxSeptembre:  34.0;
+   MaxOctobre:    30.0;
+   MaxNovembre:   24.0;
+   MaxDecembre:   19.0
   ),
   (Country:       'Liechtenstein';
    Latitude:      47;
@@ -6385,31 +6387,31 @@ Const
    AvgNovembre:   5.3;
    AvgDecembre:   1.8;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    -3.0;
+   MinFevrier:    -2.0;
+   MinMars:       2.0;
+   MinAvril:      5.0;
+   MinMai:        9.0;
+   MinJuin:       12.0;
+   MinJuillet:    14.0;
+   MinAout:       14.0;
+   MinSeptembre:  10.0;
+   MinOctobre:    7.0;
+   MinNovembre:   2.0;
+   MinDecembre:   -1.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    4.0;
+   MaxFevrier:    6.0;
+   MaxMars:       11.0;
+   MaxAvril:      15.0;
+   MaxMai:        20.0;
+   MaxJuin:       22.0;
+   MaxJuillet:    24.0;
+   MaxAout:       24.0;
+   MaxSeptembre:  20.0;
+   MaxOctobre:    16.0;
+   MaxNovembre:   9.0;
+   MaxDecembre:   5.0
   ),
   (Country:       'Lituanie';
    Latitude:      55;
@@ -6433,30 +6435,30 @@ Const
    AvgNovembre:   1.9;
    AvgDecembre:   -2.2;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
+   MinJanvier:    -6.0;
+   MinFevrier:    -6.0;
+   MinMars:       -3.0;
+   MinAvril:      3.0;
+   MinMai:        8.0;
+   MinJuin:       11.0;
+   MinJuillet:    14.0;
+   MinAout:       13.0;
+   MinSeptembre:  8.0;
+   MinOctobre:    4.0;
    MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinDecembre:   -4.0;
 
-   MaxJanvier:    0.0;
+   MaxJanvier:    -2.0;
    MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
+   MaxMars:       4.0;
+   MaxAvril:      13.0;
+   MaxMai:        18.0;
+   MaxJuin:       22.0;
+   MaxJuillet:    24.0;
+   MaxAout:       23.0;
+   MaxSeptembre:  17.0;
+   MaxOctobre:    10.0;
+   MaxNovembre:   4.0;
    MaxDecembre:   0.0
   ),
   (Country:       'Luxembourg';
@@ -6481,31 +6483,31 @@ Const
    AvgNovembre:   5.3;
    AvgDecembre:   2.3;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
+   MinJanvier:    -1.0;
+   MinFevrier:    -1.0;
+   MinMars:       2.0;
+   MinAvril:      5.0;
+   MinMai:        9.0;
+   MinJuin:       12.0;
+   MinJuillet:    14.0;
+   MinAout:       14.0;
+   MinSeptembre:  10.0;
+   MinOctobre:    7.0;
+   MinNovembre:   3.0;
    MinDecembre:   0.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    4.0;
+   MaxFevrier:    5.0;
+   MaxMars:       10.0;
+   MaxAvril:      14.0;
+   MaxMai:        18.0;
+   MaxJuin:       22.0;
+   MaxJuillet:    24.0;
+   MaxAout:       23.0;
+   MaxSeptembre:  19.0;
+   MaxOctobre:    13.0;
+   MaxNovembre:   8.0;
+   MaxDecembre:   5.0
   ),
   (Country:       'Macao';
    Latitude:      22;
@@ -6529,31 +6531,31 @@ Const
    AvgNovembre:   21.2;
    AvgDecembre:   17.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    12.0;
+   MinFevrier:    14.0;
+   MinMars:       16.0;
+   MinAvril:      20.0;
+   MinMai:        24.0;
+   MinJuin:       26.0;
+   MinJuillet:    26.0;
+   MinAout:       26.0;
+   MinSeptembre:  25.0;
+   MinOctobre:    23.0;
+   MinNovembre:   18.0;
+   MinDecembre:   14.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    18.0;
+   MaxFevrier:    18.0;
+   MaxMars:       21.0;
+   MaxAvril:      25.0;
+   MaxMai:        28.0;
+   MaxJuin:       30.0;
+   MaxJuillet:    32.0;
+   MaxAout:       32.0;
+   MaxSeptembre:  30.0;
+   MaxOctobre:    28.0;
+   MaxNovembre:   24.0;
+   MaxDecembre:   20.0
   ),
   (Country:       'Macedoine';
    Latitude:      41;
@@ -6564,44 +6566,44 @@ Const
    LongDirection: 'E';
    Superficie:    25333;
    Capital:       'Skopje';
-   AvgJanvier:    1.0;
-   AvgFevrier:    3.5;
-   AvgMars:       6.1;
-   AvgAvril:      10.5;
-   AvgMai:        14.9;
-   AvgJuin:       18.5;
-   AvgJuillet:    20.9;
-   AvgAout:       21.8;
-   AvgSeptembre:  17.4;
-   AvgOctobre:    11.8;
-   AvgNovembre:   8.3;
-   AvgDecembre:   2.8;
+   AvgJanvier:    0.4;
+   AvgFevrier:    3.0;
+   AvgMars:       7.8;
+   AvgAvril:      12.2;
+   AvgMai:        17.2;
+   AvgJuin:       21.2;
+   AvgJuillet:    23.6;
+   AvgAout:       23.6;
+   AvgSeptembre:  19.0;
+   AvgOctobre:    13.5;
+   AvgNovembre:   6.6;
+   AvgDecembre:   1.7;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    -4.0;
+   MinFevrier:    -2.0;
+   MinMars:       2.0;
+   MinAvril:      5.0;
+   MinMai:        10.0;
+   MinJuin:       14.0;
+   MinJuillet:    16.0;
+   MinAout:       16.0;
+   MinSeptembre:  12.0;
+   MinOctobre:    7.0;
+   MinNovembre:   2.0;
+   MinDecembre:   -2.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    4.0;
+   MaxFevrier:    8.0;
+   MaxMars:       14.0;
+   MaxAvril:      19.0;
+   MaxMai:        24.0;
+   MaxJuin:       29.0;
+   MaxJuillet:    31.0;
+   MaxAout:       32.0;
+   MaxSeptembre:  26.0;
+   MaxOctobre:    20.0;
+   MaxNovembre:   12.0;
+   MaxDecembre:   5.0
   ),
   (Country:       'Madagascar';
    Latitude:      18;
@@ -6625,31 +6627,31 @@ Const
    AvgNovembre:   21.7;
    AvgDecembre:   22.4;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    17.0;
+   MinFevrier:    17.0;
+   MinMars:       17.0;
+   MinAvril:      15.0;
+   MinMai:        13.0;
+   MinJuin:       10.0;
+   MinJuillet:    9.0;
+   MinAout:       10.0;
+   MinSeptembre:  11.0;
+   MinOctobre:    13.0;
+   MinNovembre:   15.0;
+   MinDecembre:   17.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    27.0;
+   MaxFevrier:    27.0;
+   MaxMars:       27.0;
+   MaxAvril:      26.0;
+   MaxMai:        25.0;
+   MaxJuin:       22.0;
+   MaxJuillet:    21.0;
+   MaxAout:       22.0;
+   MaxSeptembre:  25.0;
+   MaxOctobre:    27.0;
+   MaxNovembre:   28.0;
+   MaxDecembre:   28.0
   ),
   (Country:       'Malaisie';
    Latitude:      4;
@@ -6673,31 +6675,31 @@ Const
    AvgNovembre:   27.5;
    AvgDecembre:   27.5;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    23.0;
+   MinFevrier:    23.0;
+   MinMars:       23.0;
+   MinAvril:      24.0;
+   MinMai:        24.0;
+   MinJuin:       24.0;
+   MinJuillet:    23.0;
+   MinAout:       23.0;
+   MinSeptembre:  23.0;
+   MinOctobre:    23.0;
+   MinNovembre:   23.0;
+   MinDecembre:   23.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    32.0;
+   MaxFevrier:    33.0;
+   MaxMars:       33.0;
+   MaxAvril:      33.0;
+   MaxMai:        33.0;
+   MaxJuin:       33.0;
+   MaxJuillet:    32.0;
+   MaxAout:       32.0;
+   MaxSeptembre:  32.0;
+   MaxOctobre:    32.0;
+   MaxNovembre:   32.0;
+   MaxDecembre:   32.0
   ),
   (Country:       'Malawi';
    Latitude:      13;
@@ -6721,31 +6723,31 @@ Const
    AvgNovembre:   23.0;
    AvgDecembre:   22.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    17.0;
+   MinFevrier:    17.0;
+   MinMars:       16.0;
+   MinAvril:      13.0;
+   MinMai:        10.0;
+   MinJuin:       7.0;
+   MinJuillet:    6.0;
+   MinAout:       7.0;
+   MinSeptembre:  11.0;
+   MinOctobre:    14.0;
+   MinNovembre:   16.0;
+   MinDecembre:   17.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    26.0;
+   MaxFevrier:    26.0;
+   MaxMars:       26.0;
+   MaxAvril:      26.0;
+   MaxMai:        25.0;
+   MaxJuin:       23.0;
+   MaxJuillet:    23.0;
+   MaxAout:       25.0;
+   MaxSeptembre:  27.0;
+   MaxOctobre:    30.0;
+   MaxNovembre:   30.0;
+   MaxDecembre:   27.0
   ),
   (Country:       'Maldives';
    Latitude:      3;
@@ -6769,31 +6771,31 @@ Const
    AvgNovembre:   27.5;
    AvgDecembre:   27.5;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    25.0;
+   MinFevrier:    25.0;
+   MinMars:       26.0;
+   MinAvril:      26.0;
+   MinMai:        26.0;
+   MinJuin:       26.0;
+   MinJuillet:    25.0;
+   MinAout:       25.0;
+   MinSeptembre:  25.0;
+   MinOctobre:    25.0;
+   MinNovembre:   25.0;
+   MinDecembre:   25.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    30.0;
+   MaxFevrier:    31.0;
+   MaxMars:       31.0;
+   MaxAvril:      32.0;
+   MaxMai:        31.0;
+   MaxJuin:       30.0;
+   MaxJuillet:    30.0;
+   MaxAout:       30.0;
+   MaxSeptembre:  30.0;
+   MaxOctobre:    30.0;
+   MaxNovembre:   30.0;
+   MaxDecembre:   30.0
   ),
   (Country:       'Mali';
    Latitude:      17;
@@ -6817,31 +6819,31 @@ Const
    AvgNovembre:   26.7;
    AvgDecembre:   25.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    17.0;
+   MinFevrier:    20.0;
+   MinMars:       23.0;
+   MinAvril:      25.0;
+   MinMai:        25.0;
+   MinJuin:       23.0;
+   MinJuillet:    22.0;
+   MinAout:       22.0;
+   MinSeptembre:  22.0;
+   MinOctobre:    21.0;
+   MinNovembre:   18.0;
+   MinDecembre:   17.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    33.0;
+   MaxFevrier:    36.0;
+   MaxMars:       38.0;
+   MaxAvril:      39.0;
+   MaxMai:        38.0;
+   MaxJuin:       35.0;
+   MaxJuillet:    32.0;
+   MaxAout:       31.0;
+   MaxSeptembre:  32.0;
+   MaxOctobre:    35.0;
+   MaxNovembre:   18.0;
+   MaxDecembre:   17.0
   ),
   (Country:       'Malte';
    Latitude:      35;
@@ -6865,31 +6867,31 @@ Const
    AvgNovembre:   17.6;
    AvgDecembre:   14.4;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    10.0;
+   MinFevrier:    9.0;
+   MinMars:       11.0;
+   MinAvril:      12.0;
+   MinMai:        16.0;
+   MinJuin:       19.0;
+   MinJuillet:    22.0;
+   MinAout:       23.0;
+   MinSeptembre:  21.0;
+   MinOctobre:    18.0;
+   MinNovembre:   15.0;
+   MinDecembre:   12.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    16.0;
+   MaxFevrier:    16.0;
+   MaxMars:       17.0;
+   MaxAvril:      20.0;
+   MaxMai:        24.0;
+   MaxJuin:       29.0;
+   MaxJuillet:    32.0;
+   MaxAout:       32.0;
+   MaxSeptembre:  28.0;
+   MaxOctobre:    25.0;
+   MaxNovembre:   21.0;
+   MaxDecembre:   17.0
   ),
   (Country:       'Maroc';
    Latitude:      31;
@@ -6913,31 +6915,31 @@ Const
    AvgNovembre:   15.7;
    AvgDecembre:   13.6;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    7.0;
+   MinFevrier:    7.0;
+   MinMars:       9.0;
+   MinAvril:      11.0;
+   MinMai:        13.0;
+   MinJuin:       16.0;
+   MinJuillet:    18.0;
+   MinAout:       18.0;
+   MinSeptembre:  17.0;
+   MinOctobre:    14.0;
+   MinNovembre:   10.0;
+   MinDecembre:   8.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    17.0;
+   MaxFevrier:    18.0;
+   MaxMars:       20.0;
+   MaxAvril:      21.0;
+   MaxMai:        24.0;
+   MaxJuin:       26.0;
+   MaxJuillet:    27.0;
+   MaxAout:       28.0;
+   MaxSeptembre:  27.0;
+   MaxOctobre:    25.0;
+   MaxNovembre:   21.0;
+   MaxDecembre:   19.0
   ),
   (Country:       'Martinique';
    Latitude:      14;
@@ -6961,31 +6963,31 @@ Const
    AvgNovembre:   27.0;
    AvgDecembre:   26.3;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    22.0;
+   MinFevrier:    22.0;
+   MinMars:       22.0;
+   MinAvril:      23.0;
+   MinMai:        24.0;
+   MinJuin:       25.0;
+   MinJuillet:    25.0;
+   MinAout:       25.0;
+   MinSeptembre:  24.0;
+   MinOctobre:    24.0;
+   MinNovembre:   24.0;
+   MinDecembre:   23.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    29.0;
+   MaxFevrier:    29.0;
+   MaxMars:       30.0;
+   MaxAvril:      30.0;
+   MaxMai:        31.0;
+   MaxJuin:       31.0;
+   MaxJuillet:    31.0;
+   MaxAout:       31.0;
+   MaxSeptembre:  32.0;
+   MaxOctobre:    31.0;
+   MaxNovembre:   30.0;
+   MaxDecembre:   30.0
   ),
   (Country:       'Maurice';
    Latitude:      15;
@@ -7009,31 +7011,31 @@ Const
    AvgNovembre:   25.0;
    AvgDecembre:   26.5;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    22.0;
+   MinFevrier:    22.0;
+   MinMars:       21.0;
+   MinAvril:      21.0;
+   MinMai:        21.0;
+   MinJuin:       18.0;
+   MinJuillet:    17.0;
+   MinAout:       18.0;
+   MinSeptembre:  18.0;
+   MinOctobre:    19.0;
+   MinNovembre:   20.0;
+   MinDecembre:   21.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    29.0;
+   MaxFevrier:    28.0;
+   MaxMars:       28.0;
+   MaxAvril:      27.0;
+   MaxMai:        26.0;
+   MaxJuin:       24.0;
+   MaxJuillet:    23.0;
+   MaxAout:       23.0;
+   MaxSeptembre:  23.0;
+   MaxOctobre:    24.0;
+   MaxNovembre:   26.0;
+   MaxDecembre:   28.0
   ),
   (Country:       'Mauritanie';
    Latitude:      21;
@@ -7057,31 +7059,31 @@ Const
    AvgNovembre:   27.0;
    AvgDecembre:   23.4;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    15.0;
+   MinFevrier:    16.0;
+   MinMars:       18.0;
+   MinAvril:      19.0;
+   MinMai:        20.0;
+   MinJuin:       22.0;
+   MinJuillet:    24.0;
+   MinAout:       25.0;
+   MinSeptembre:  26.0;
+   MinOctobre:    24.0;
+   MinNovembre:   20.0;
+   MinDecembre:   16.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    29.0;
+   MaxFevrier:    31.0;
+   MaxMars:       33.0;
+   MaxAvril:      34.0;
+   MaxMai:        34.0;
+   MaxJuin:       34.0;
+   MaxJuillet:    32.0;
+   MaxAout:       33.0;
+   MaxSeptembre:  35.0;
+   MaxOctobre:    37.0;
+   MaxNovembre:   34.0;
+   MaxDecembre:   30.0
   ),
   (Country:       'Mayotte';
    Latitude:      12;
@@ -7105,31 +7107,31 @@ Const
    AvgNovembre:   27.5;
    AvgDecembre:   27.8;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    25.0;
+   MinFevrier:    25.0;
+   MinMars:       25.0;
+   MinAvril:      25.0;
+   MinMai:        25.0;
+   MinJuin:       23.0;
+   MinJuillet:    22.0;
+   MinAout:       21.0;
+   MinSeptembre:  22.0;
+   MinOctobre:    23.0;
+   MinNovembre:   25.0;
+   MinDecembre:   25.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    31.0;
+   MaxFevrier:    31.0;
+   MaxMars:       31.0;
+   MaxAvril:      31.0;
+   MaxMai:        30.0;
+   MaxJuin:       29.0;
+   MaxJuillet:    28.0;
+   MaxAout:       28.0;
+   MaxSeptembre:  29.0;
+   MaxOctobre:    30.0;
+   MaxNovembre:   30.0;
+   MaxDecembre:   31.0
   ),
   (Country:       'Mexique';
    Latitude:      23;
@@ -7153,31 +7155,31 @@ Const
    AvgNovembre:   15.5;
    AvgDecembre:   14.4;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    7.0;
+   MinFevrier:    8.0;
+   MinMars:       10.0;
+   MinAvril:      12.0;
+   MinMai:        13.0;
+   MinJuin:       14.0;
+   MinJuillet:    13.0;
+   MinAout:       13.0;
+   MinSeptembre:  13.0;
+   MinOctobre:    11.0;
+   MinNovembre:   9.0;
+   MinDecembre:   7.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    22.0;
+   MaxFevrier:    24.0;
+   MaxMars:       26.0;
+   MaxAvril:      27.0;
+   MaxMai:        25.0;
+   MaxJuin:       24.0;
+   MaxJuillet:    24.0;
+   MaxAout:       24.0;
+   MaxSeptembre:  23.0;
+   MaxOctobre:    23.0;
+   MaxNovembre:   22.0;
+   MaxDecembre:   22.0
   ),
   (Country:       'Micronesie';
    Latitude:      5;
@@ -7201,31 +7203,31 @@ Const
    AvgNovembre:   26.5;
    AvgDecembre:   26.5;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    23.0;
+   MinFevrier:    24.0;
+   MinMars:       23.0;
+   MinAvril:      23.0;
+   MinMai:        23.0;
+   MinJuin:       22.0;
+   MinJuillet:    22.0;
+   MinAout:       22.0;
+   MinSeptembre:  22.0;
+   MinOctobre:    22.0;
+   MinNovembre:   22.0;
+   MinDecembre:   23.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    30.0;
+   MaxFevrier:    30.0;
+   MaxMars:       30.0;
+   MaxAvril:      30.0;
+   MaxMai:        30.0;
+   MaxJuin:       30.0;
+   MaxJuillet:    31.0;
+   MaxAout:       31.0;
+   MaxSeptembre:  31.0;
+   MaxOctobre:    31.0;
+   MaxNovembre:   31.0;
+   MaxDecembre:   30.0
   ),
   (Country:       'Moldavie';
    Latitude:      46;
@@ -7249,31 +7251,31 @@ Const
    AvgNovembre:   4.4;
    AvgDecembre:   -0.4;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
+   MinJanvier:    -4.0;
+   MinFevrier:    -4.0;
    MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinAvril:      6.0;
+   MinMai:        12.0;
+   MinJuin:       15.0;
+   MinJuillet:    17.0;
+   MinAout:       17.0;
+   MinSeptembre:  12.0;
+   MinOctobre:    7.0;
+   MinNovembre:   2.0;
+   MinDecembre:   -3.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    1.0;
+   MaxFevrier:    3.0;
+   MaxMars:       8.0;
+   MaxAvril:      16.0;
+   MaxMai:        22.0;
+   MaxJuin:       25.0;
+   MaxJuillet:    28.0;
+   MaxAout:       27.0;
+   MaxSeptembre:  22.0;
+   MaxOctobre:    15.0;
+   MaxNovembre:   7.0;
+   MaxDecembre:   2.0
   ),
   (Country:       'Monaco';
    Latitude:      43;
@@ -7297,31 +7299,31 @@ Const
    AvgNovembre:   13.8;
    AvgDecembre:   11.2;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    5.0;
+   MinFevrier:    6.0;
+   MinMars:       8.0;
+   MinAvril:      10.0;
+   MinMai:        14.0;
+   MinJuin:       18.0;
+   MinJuillet:    20.0;
+   MinAout:       20.0;
+   MinSeptembre:  17.0;
+   MinOctobre:    13.0;
+   MinNovembre:   9.0;
+   MinDecembre:   6.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    14.0;
+   MaxFevrier:    14.0;
+   MaxMars:       16.0;
+   MaxAvril:      17.0;
+   MaxMai:        21.0;
+   MaxJuin:       25.0;
+   MaxJuillet:    28.0;
+   MaxAout:       28.0;
+   MaxSeptembre:  25.0;
+   MaxOctobre:    21.0;
+   MaxNovembre:   17.0;
+   MaxDecembre:   14.0
   ),
   (Country:       'Mongolie';
    Latitude:      46;
@@ -7345,31 +7347,31 @@ Const
    AvgNovembre:   -13.2;
    AvgDecembre:   -21.5;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
+   MinJanvier:    -33.0;
+   MinFevrier:    -30.0;
+   MinMars:       -17.0;
+   MinAvril:      -6.0;
    MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
+   MinJuin:       8.0;
+   MinJuillet:    11.0;
+   MinAout:       8.0;
    MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinOctobre:    -7.0;
+   MinNovembre:   -21.0;
+   MinDecembre:   -29.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
+   MaxJanvier:    -16.0;
+   MaxFevrier:    -11.0;
    MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxAvril:      11.0;
+   MaxMai:        17.0;
+   MaxJuin:       23.0;
+   MaxJuillet:    26.0;
+   MaxAout:       23.0;
+   MaxSeptembre:  17.0;
+   MaxOctobre:    8.0;
+   MaxNovembre:   -5.0;
+   MaxDecembre:   -14.0
   ),
   (Country:       'Montenegro';
    Latitude:      42;
@@ -7393,31 +7395,31 @@ Const
    AvgNovembre:   11.5;
    AvgDecembre:   7.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    1.0;
+   MinFevrier:    2.0;
+   MinMars:       6.0;
+   MinAvril:      9.0;
+   MinMai:        14.0;
+   MinJuin:       18.0;
+   MinJuillet:    21.0;
+   MinAout:       21.0;
+   MinSeptembre:  16.0;
+   MinOctobre:    12.0;
+   MinNovembre:   7.0;
+   MinDecembre:   3.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    10.0;
+   MaxFevrier:    12.0;
+   MaxMars:       16.0;
+   MaxAvril:      20.0;
+   MaxMai:        25.0;
+   MaxJuin:       30.0;
+   MaxJuillet:    33.0;
+   MaxAout:       33.0;
+   MaxSeptembre:  27.0;
+   MaxOctobre:    22.0;
+   MaxNovembre:   16.0;
+   MaxDecembre:   11.0
   ),
   (Country:       'Montserrat';
    Latitude:      16;
@@ -7441,31 +7443,31 @@ Const
    AvgNovembre:   26.7;
    AvgDecembre:   25.7;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    22.0;
+   MinFevrier:    21.0;
+   MinMars:       22.0;
+   MinAvril:      23.0;
+   MinMai:        24.0;
+   MinJuin:       25.0;
+   MinJuillet:    31.0;
+   MinAout:       25.0;
+   MinSeptembre:  24.0;
+   MinOctobre:    24.0;
+   MinNovembre:   23.0;
+   MinDecembre:   22.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    29.0;
+   MaxFevrier:    29.0;
+   MaxMars:       29.0;
+   MaxAvril:      30.0;
+   MaxMai:        31.0;
+   MaxJuin:       31.0;
+   MaxJuillet:    31.0;
+   MaxAout:       32.0;
+   MaxSeptembre:  31.0;
+   MaxOctobre:    31.0;
+   MaxNovembre:   30.0;
+   MaxDecembre:   29.0
   ),
   (Country:       'Mozambique';
    Latitude:      18;
@@ -7489,31 +7491,31 @@ Const
    AvgNovembre:   25.0;
    AvgDecembre:   26.4;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    23.0;
+   MinFevrier:    23.0;
+   MinMars:       22.0;
+   MinAvril:      20.0;
+   MinMai:        17.0;
+   MinJuin:       14.0;
+   MinJuillet:    14.0;
+   MinAout:       15.0;
+   MinSeptembre:  17.0;
+   MinOctobre:    19.0;
+   MinNovembre:   21.0;
+   MinDecembre:   22.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    31.0;
+   MaxFevrier:    31.0;
+   MaxMars:       31.0;
+   MaxAvril:      29.0;
+   MaxMai:        28.0;
+   MaxJuin:       27.0;
+   MaxJuillet:    26.0;
+   MaxAout:       27.0;
+   MaxSeptembre:  28.0;
+   MaxOctobre:    28.0;
+   MaxNovembre:   29.0;
+   MaxDecembre:   31.0
   ),
   (Country:       'Myanmar';
    Latitude:      19;
@@ -7537,31 +7539,31 @@ Const
    AvgNovembre:   27.0;
    AvgDecembre:   24.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    16.0;
+   MinFevrier:    17.0;
+   MinMars:       21.0;
+   MinAvril:      25.0;
+   MinMai:        26.0;
+   MinJuin:       26.0;
+   MinJuillet:    25.0;
+   MinAout:       25.0;
+   MinSeptembre:  25.0;
+   MinOctobre:    24.0;
+   MinNovembre:   22.0;
+   MinDecembre:   18.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    32.0;
+   MaxFevrier:    35.0;
+   MaxMars:       38.0;
+   MaxAvril:      39.0;
+   MaxMai:        37.0;
+   MaxJuin:       34.0;
+   MaxJuillet:    33.0;
+   MaxAout:       33.0;
+   MaxSeptembre:  34.0;
+   MaxOctobre:    35.0;
+   MaxNovembre:   34.0;
+   MaxDecembre:   32.0
   ),
   (Country:       'Namibie';
    Latitude:      22;
@@ -7585,31 +7587,31 @@ Const
    AvgNovembre:   24.3;
    AvgDecembre:   25.1;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    17.0;
+   MinFevrier:    17.0;
+   MinMars:       16.0;
+   MinAvril:      13.0;
+   MinMai:        11.0;
+   MinJuin:       8.0;
+   MinJuillet:    7.0;
+   MinAout:       10.0;
+   MinSeptembre:  13.0;
+   MinOctobre:    16.0;
+   MinNovembre:   16.0;
+   MinDecembre:   17.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    32.0;
+   MaxFevrier:    31.0;
+   MaxMars:       30.0;
+   MaxAvril:      28.0;
+   MaxMai:        26.0;
+   MaxJuin:       23.0;
+   MaxJuillet:    23.0;
+   MaxAout:       26.0;
+   MaxSeptembre:  30.0;
+   MaxOctobre:    32.0;
+   MaxNovembre:   32.0;
+   MaxDecembre:   33.0
   ),
   (Country:       'Nauru';
    Latitude:      0;
@@ -7633,31 +7635,31 @@ Const
    AvgNovembre:   28.0;
    AvgDecembre:   27.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    24.0;
+   MinFevrier:    24.0;
+   MinMars:       24.0;
+   MinAvril:      24.0;
+   MinMai:        25.0;
+   MinJuin:       25.0;
+   MinJuillet:    24.0;
+   MinAout:       24.0;
+   MinSeptembre:  24.0;
+   MinOctobre:    25.0;
+   MinNovembre:   25.0;
+   MinDecembre:   24.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    30.0;
+   MaxFevrier:    30.0;
+   MaxMars:       30.0;
+   MaxAvril:      30.0;
+   MaxMai:        30.0;
+   MaxJuin:       30.0;
+   MaxJuillet:    30.0;
+   MaxAout:       30.0;
+   MaxSeptembre:  30.0;
+   MaxOctobre:    31.0;
+   MaxNovembre:   31.0;
+   MaxDecembre:   30.0
   ),
   (Country:       'Nepal';
    Latitude:      28;
@@ -7681,31 +7683,31 @@ Const
    AvgNovembre:   15.7;
    AvgDecembre:   12.0;
 
-   MinJanvier:    0.0;
-   MinFevrier:    0.0;
-   MinMars:       0.0;
-   MinAvril:      0.0;
-   MinMai:        0.0;
-   MinJuin:       0.0;
-   MinJuillet:    0.0;
-   MinAout:       0.0;
-   MinSeptembre:  0.0;
-   MinOctobre:    0.0;
-   MinNovembre:   0.0;
-   MinDecembre:   0.0;
+   MinJanvier:    2.0;
+   MinFevrier:    4.0;
+   MinMars:       8.0;
+   MinAvril:      12.0;
+   MinMai:        16.0;
+   MinJuin:       19.0;
+   MinJuillet:    20.0;
+   MinAout:       20.0;
+   MinSeptembre:  18.0;
+   MinOctobre:    13.0;
+   MinNovembre:   8.0;
+   MinDecembre:   4.0;
 
-   MaxJanvier:    0.0;
-   MaxFevrier:    0.0;
-   MaxMars:       0.0;
-   MaxAvril:      0.0;
-   MaxMai:        0.0;
-   MaxJuin:       0.0;
-   MaxJuillet:    0.0;
-   MaxAout:       0.0;
-   MaxSeptembre:  0.0;
-   MaxOctobre:    0.0;
-   MaxNovembre:   0.0;
-   MaxDecembre:   0.0
+   MaxJanvier:    19.0;
+   MaxFevrier:    21.0;
+   MaxMars:       25.0;
+   MaxAvril:      28.0;
+   MaxMai:        29.0;
+   MaxJuin:       29.0;
+   MaxJuillet:    28.0;
+   MaxAout:       29.0;
+   MaxSeptembre:  28.0;
+   MaxOctobre:    27.0;
+   MaxNovembre:   24.0;
+   MaxDecembre:   20.0
   ),
   (Country:       'Nicaragua';
    Latitude:      12;
@@ -12180,6 +12182,64 @@ BEGIN
        WriteLn('Decembre  : ',Country[J].AvgDecembre:1:1,' celcius, ',
                               CentToFahr(Country[J].AvgDecembre):1:1,' fahrenheit');
        WriteLn;
+       WriteLn('Temperature minimum du ',StrPas(Country[J].Country));
+       WriteLn;
+       WriteLn('Mois         Temperature');
+       WriteLn('-----------  ------------------------------------');
+       WriteLn('Janvier   : ',Country[J].MinJanvier:1:1,' celcius, ',
+                              CentToFahr(Country[J].MinJanvier):1:1,' fahrenheit');
+       WriteLn('Fevrier   : ',Country[J].MinFevrier:1:1,' celcius, ',
+                              CentToFahr(Country[J].MinFevrier):1:1,' fahrenheit');
+       WriteLn('Mars      : ',Country[J].MinMars:1:1,' celcius, ',
+                              CentToFahr(Country[J].MinMars):1:1,' fahrenheit');
+       WriteLn('Avril     : ',Country[J].MinAvril:1:1,' celcius, ',
+                              CentToFahr(Country[J].MinAvril):1:1,' fahrenheit');
+       WriteLn('Mai       : ',Country[J].MinMai:1:1,' celcius, ',
+                              CentToFahr(Country[J].MinMai):1:1,' fahrenheit');
+       WriteLn('Juin      : ',Country[J].MinJuin:1:1,' celcius, ',
+                              CentToFahr(Country[J].MinJuin):1:1,' fahrenheit');
+       WriteLn('Juillet   : ',Country[J].MinJuillet:1:1,' celcius, ',
+                              CentToFahr(Country[J].MinJuillet):1:1,' fahrenheit');
+       WriteLn('Aout      : ',Country[J].MinAout:1:1,' celcius, ',
+                              CentToFahr(Country[J].MinAout):1:1,' fahrenheit');
+       WriteLn('Septembre : ',Country[J].MinSeptembre:1:1,' celcius, ',
+                              CentToFahr(Country[J].MinSeptembre):1:1,' fahrenheit');
+       WriteLn('Octobre   : ',Country[J].MinOctobre:1:1,' celcius, ',
+                              CentToFahr(Country[J].MinOctobre):1:1,' fahrenheit');
+       WriteLn('Novembre  : ',Country[J].MinNovembre:1:1,' celcius, ',
+                              CentToFahr(Country[J].MinNovembre):1:1,' fahrenheit');
+       WriteLn('Decembre  : ',Country[J].MinDecembre:1:1,' celcius, ',
+                              CentToFahr(Country[J].MinDecembre):1:1,' fahrenheit');
+       WriteLn;
+       WriteLn('Temperature maximum du ',StrPas(Country[J].Country));
+       WriteLn;
+       WriteLn('Mois         Temperature');
+       WriteLn('-----------  ------------------------------------');
+       WriteLn('Janvier   : ',Country[J].MaxJanvier:1:1,' celcius, ',
+                              CentToFahr(Country[J].MaxJanvier):1:1,' fahrenheit');
+       WriteLn('Fevrier   : ',Country[J].MaxFevrier:1:1,' celcius, ',
+                              CentToFahr(Country[J].MaxFevrier):1:1,' fahrenheit');
+       WriteLn('Mars      : ',Country[J].MaxMars:1:1,' celcius, ',
+                              CentToFahr(Country[J].MaxMars):1:1,' fahrenheit');
+       WriteLn('Avril     : ',Country[J].MaxAvril:1:1,' celcius, ',
+                              CentToFahr(Country[J].MaxAvril):1:1,' fahrenheit');
+       WriteLn('Mai       : ',Country[J].MaxMai:1:1,' celcius, ',
+                              CentToFahr(Country[J].MaxMai):1:1,' fahrenheit');
+       WriteLn('Juin      : ',Country[J].MaxJuin:1:1,' celcius, ',
+                              CentToFahr(Country[J].MaxJuin):1:1,' fahrenheit');
+       WriteLn('Juillet   : ',Country[J].MaxJuillet:1:1,' celcius, ',
+                              CentToFahr(Country[J].MaxJuillet):1:1,' fahrenheit');
+       WriteLn('Aout      : ',Country[J].MaxAout:1:1,' celcius, ',
+                              CentToFahr(Country[J].MaxAout):1:1,' fahrenheit');
+       WriteLn('Septembre : ',Country[J].MaxSeptembre:1:1,' celcius, ',
+                              CentToFahr(Country[J].MaxSeptembre):1:1,' fahrenheit');
+       WriteLn('Octobre   : ',Country[J].MaxOctobre:1:1,' celcius, ',
+                              CentToFahr(Country[J].MaxOctobre):1:1,' fahrenheit');
+       WriteLn('Novembre  : ',Country[J].MaxNovembre:1:1,' celcius, ',
+                              CentToFahr(Country[J].MaxNovembre):1:1,' fahrenheit');
+       WriteLn('Decembre  : ',Country[J].MaxDecembre:1:1,' celcius, ',
+                              CentToFahr(Country[J].MaxDecembre):1:1,' fahrenheit');
+       WriteLn;
        WriteLn('NB: Temperature moyenne base a partir de la capitale');
       End;
      End;
@@ -12334,6 +12394,64 @@ BEGIN
                               CentToFahr(Country[J].AvgNovembre):1:1,' fahrenheit');
        WriteLn('Decembre  : ',Country[J].AvgDecembre:1:1,' celsius, ',
                               CentToFahr(Country[J].AvgDecembre):1:1,' fahrenheit');
+       WriteLn;
+       WriteLn('Temperature minimum de ',StrPas(Country[J].Capital));
+       WriteLn;
+       WriteLn('Mois         Temperature');
+       WriteLn('-----------  ------------------------------------');
+       WriteLn('Janvier   : ',Country[J].MinJanvier:1:1,' celsius, ',
+                              CentToFahr(Country[J].MinJanvier):1:1,' fahrenheit');
+       WriteLn('Fevrier   : ',Country[J].MinFevrier:1:1,' celsius, ',
+                              CentToFahr(Country[J].MinFevrier):1:1,' fahrenheit');
+       WriteLn('Mars      : ',Country[J].MinMars:1:1,' celsius, ',
+                              CentToFahr(Country[J].MinMars):1:1,' fahrenheit');
+       WriteLn('Avril     : ',Country[J].MinAvril:1:1,' celsius, ',
+                              CentToFahr(Country[J].MinAvril):1:1,' fahrenheit');
+       WriteLn('Mai       : ',Country[J].MinMai:1:1,' celsius, ',
+                              CentToFahr(Country[J].MinMai):1:1,' fahrenheit');
+       WriteLn('Juin      : ',Country[J].MinJuin:1:1,' celsius, ',
+                              CentToFahr(Country[J].MinJuin):1:1,' fahrenheit');
+       WriteLn('Juillet   : ',Country[J].MinJuillet:1:1,' celsius, ',
+                              CentToFahr(Country[J].MinJuillet):1:1,' fahrenheit');
+       WriteLn('Aout      : ',Country[J].MinAout:1:1,' celsius, ',
+                              CentToFahr(Country[J].MinAout):1:1,' fahrenheit');
+       WriteLn('Septembre : ',Country[J].MinSeptembre:1:1,' celsius, ',
+                              CentToFahr(Country[J].MinSeptembre):1:1,' fahrenheit');
+       WriteLn('Octobre   : ',Country[J].MinOctobre:1:1,' celsius, ',
+                              CentToFahr(Country[J].MinOctobre):1:1,' fahrenheit');
+       WriteLn('Novembre  : ',Country[J].MinNovembre:1:1,' celsius, ',
+                              CentToFahr(Country[J].MinNovembre):1:1,' fahrenheit');
+       WriteLn('Decembre  : ',Country[J].MinDecembre:1:1,' celsius, ',
+                              CentToFahr(Country[J].MinDecembre):1:1,' fahrenheit');
+       WriteLn;
+       WriteLn('Temperature maximum de ',StrPas(Country[J].Capital));
+       WriteLn;
+       WriteLn('Mois         Temperature');
+       WriteLn('-----------  ------------------------------------');
+       WriteLn('Janvier   : ',Country[J].MaxJanvier:1:1,' celsius, ',
+                              CentToFahr(Country[J].MaxJanvier):1:1,' fahrenheit');
+       WriteLn('Fevrier   : ',Country[J].MaxFevrier:1:1,' celsius, ',
+                              CentToFahr(Country[J].MaxFevrier):1:1,' fahrenheit');
+       WriteLn('Mars      : ',Country[J].MaxMars:1:1,' celsius, ',
+                              CentToFahr(Country[J].MaxMars):1:1,' fahrenheit');
+       WriteLn('Avril     : ',Country[J].MaxAvril:1:1,' celsius, ',
+                              CentToFahr(Country[J].MaxAvril):1:1,' fahrenheit');
+       WriteLn('Mai       : ',Country[J].MaxMai:1:1,' celsius, ',
+                              CentToFahr(Country[J].MaxMai):1:1,' fahrenheit');
+       WriteLn('Juin      : ',Country[J].MaxJuin:1:1,' celsius, ',
+                              CentToFahr(Country[J].MaxJuin):1:1,' fahrenheit');
+       WriteLn('Juillet   : ',Country[J].MaxJuillet:1:1,' celsius, ',
+                              CentToFahr(Country[J].MaxJuillet):1:1,' fahrenheit');
+       WriteLn('Aout      : ',Country[J].MaxAout:1:1,' celsius, ',
+                              CentToFahr(Country[J].MaxAout):1:1,' fahrenheit');
+       WriteLn('Septembre : ',Country[J].MaxSeptembre:1:1,' celsius, ',
+                              CentToFahr(Country[J].MaxSeptembre):1:1,' fahrenheit');
+       WriteLn('Octobre   : ',Country[J].MaxOctobre:1:1,' celsius, ',
+                              CentToFahr(Country[J].MaxOctobre):1:1,' fahrenheit');
+       WriteLn('Novembre  : ',Country[J].MaxNovembre:1:1,' celsius, ',
+                              CentToFahr(Country[J].MaxNovembre):1:1,' fahrenheit');
+       WriteLn('Decembre  : ',Country[J].MaxDecembre:1:1,' celsius, ',
+                              CentToFahr(Country[J].MaxDecembre):1:1,' fahrenheit');
       End;
      End;
     End;
