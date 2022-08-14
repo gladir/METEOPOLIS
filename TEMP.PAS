@@ -11985,8 +11985,9 @@ Const
 
 Var
  Output:(_Screen,_SQL,_XML);
- Found:Boolean;
+ Found,Warning:Boolean;
  I,J:Integer;
+ S:String;
 
 Function StrToUpper(S:String):String;
 Var
@@ -12025,6 +12026,7 @@ BEGIN
   End;
   For I:=1 to ParamCount do Begin
    Found:=False;
+   Warning:=False;
    If StrToUpper(ParamStr(I))='/XML'Then Begin
    End
     Else
@@ -12032,7 +12034,15 @@ BEGIN
    End
     Else
    For J:=Low(Country) to High(Country)do Begin
-    If StrToUpper(StrPas(Country[J].Country))=StrToUpper(ParamStr(I))Then Begin
+    S:=StrToUpper(ParamStr(I));
+    If S='ANTARTIQUE'Then Begin
+     S:='ANTARCTIQUE';
+     If Not(Warning)Then Begin
+      WriteLn('Attention ! Antarctique r‚clame la lettre C entre R et T.');
+      Warning:=True;
+     End;
+    End;
+    If StrToUpper(StrPas(Country[J].Country))=S Then Begin
      Found:=True;
      Case Output of
       _XML:Begin
@@ -12246,7 +12256,7 @@ BEGIN
     End;
    End;
    If Not(Found)Then For J:=Low(Country) to High(Country)do Begin
-    If StrToUpper(StrPas(Country[J].Capital))=StrToUpper(ParamStr(I))Then Begin
+    If StrToUpper(StrPas(Country[J].Capital))=StrToUpper(ParamStr(I)) Then Begin
      Case Output of
       _XML:Begin
        WriteLn('<Temperature>');
