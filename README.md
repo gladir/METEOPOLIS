@@ -12,7 +12,7 @@ Voici la liste des différents fichiers proposés dans METEOPOLIS :
 	</tr>
 	<tr>
 		<td><b>NCAP2.PAS</b></td>
-		<td>Processeur arithmetique NetCDF autonome pour Turbo Pascal 7 et Free Pascal : CDF-1/CDF-2, expressions sur tableaux, scripts, attributs, tranches, boucles et reductions. Implementation partielle de NCO ; consulter <code>NCAP2 --help</code> pour les limites.</td>
+		<td>Cette commande permet de lancer le processeur arithmetique NetCDF autonome : CDF-1/CDF-2, expressions sur tableaux, scripts, attributs, tranches, boucles et reductions.</td>
 	</tr>
 	<tr>
 		<td><b>CONVERS.PAS</b></td>
