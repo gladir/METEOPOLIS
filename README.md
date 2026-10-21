@@ -11,6 +11,10 @@ Voici la liste des différents fichiers proposés dans METEOPOLIS :
 		<th>Description</th>	
 	</tr>
 	<tr>
+		<td><b>NCAP2.PAS</b></td>
+		<td>Processeur arithmetique NetCDF autonome pour Free Pascal : CDF-1/CDF-2, expressions sur tableaux, scripts, attributs, tranches, boucles et reductions. Implementation partielle de NCO ; consulter <code>NCAP2 --help</code> pour les limites.</td>
+	</tr>
+	<tr>
 		<td><b>CONVERS.PAS</b></td>
 		<td>Cette commande permet de convertir une unite de mesure de temperature.</td>
 	</tr>
@@ -37,6 +41,8 @@ Sinon, vous pouvez également le compiler avec le Turbo Pascal à l'aide de la s
 Par exemple, si vous voulez compiler SEASON.PAS, vous devrez tapez la commande suivante :
 
 <pre><b>fpc</b> SEASON.PAS</pre>
+
+<p>Exception : <b>NCAP2.PAS</b> utilise les tableaux dynamiques et les chaines longues de Free Pascal 3.2 ou ulterieur ; il ne compile pas avec Turbo Pascal 16 bits. Compilation : <code>fpc NCAP2.PAS</code>. Aucune bibliotheque NetCDF externe n'est necessaire. Tests d'integration : <code>python tests/test_ncap2.py</code> apres compilation.</p>
 
 <h2>Licence</h2>
 <ul>
