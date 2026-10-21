@@ -12,7 +12,7 @@ Voici la liste des différents fichiers proposés dans METEOPOLIS :
 	</tr>
 	<tr>
 		<td><b>NCAP2.PAS</b></td>
-		<td>Processeur arithmetique NetCDF autonome pour Free Pascal : CDF-1/CDF-2, expressions sur tableaux, scripts, attributs, tranches, boucles et reductions. Implementation partielle de NCO ; consulter <code>NCAP2 --help</code> pour les limites.</td>
+		<td>Processeur arithmetique NetCDF autonome pour Turbo Pascal 7 et Free Pascal : CDF-1/CDF-2, expressions sur tableaux, scripts, attributs, tranches, boucles et reductions. Implementation partielle de NCO ; consulter <code>NCAP2 --help</code> pour les limites.</td>
 	</tr>
 	<tr>
 		<td><b>CONVERS.PAS</b></td>
@@ -42,7 +42,7 @@ Par exemple, si vous voulez compiler SEASON.PAS, vous devrez tapez la commande s
 
 <pre><b>fpc</b> SEASON.PAS</pre>
 
-<p>Exception : <b>NCAP2.PAS</b> utilise les tableaux dynamiques et les chaines longues de Free Pascal 3.2 ou ulterieur ; il ne compile pas avec Turbo Pascal 16 bits. Compilation : <code>fpc NCAP2.PAS</code>. Aucune bibliotheque NetCDF externe n'est necessaire. Tests d'integration : <code>python tests/test_ncap2.py</code> apres compilation.</p>
+<p><b>NCAP2.PAS</b> compile avec Turbo Pascal 7 (<code>tpc NCAP2.PAS</code>) et Free Pascal (<code>fpc NCAP2.PAS</code>). Il utilise uniquement des records, des procedures et des fonctions, sans unite ni include ; ses tables sont allouees dans le tas. Pour respecter les limites DOS 16 bits : 4096 elements par tableau, 64 variables, 128 dimensions, rang 8, scripts de 60000 octets, noms de 63 caracteres et textes de 255 caracteres. Les formats CDF-1/CDF-2 sont pris en charge avec des offsets limites a 2 Go ; les autres formats ne sont pas implementes. Tests Free Pascal : <code>python tests/test_ncap2.py</code> apres compilation. Compilation et executions avec le vrai Turbo Pascal dans DOSBox : <code>python tests/test_ncap2_tp.py --bp C:/BP --dosbox "chemin/DOSBox.exe"</code>.</p>
 
 <h2>Licence</h2>
 <ul>
