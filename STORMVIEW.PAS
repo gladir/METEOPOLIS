@@ -753,7 +753,7 @@ Begin
    ri:=Round(az*n/360)Mod n;
    gi:=Trunc(d/rng*ng);
    If gi>=ng Then gi:=ng-1;
-   g^[r,c]:=pb^[ri*ng+gi];
+   g^[r,c]:=pb^[LongInt(ri)*ng+gi];
   End;
  End;
 End;
@@ -907,7 +907,7 @@ Begin
     FillChar(pb^,SizeOf(TPolar),0);
     For i:=0 to nrad-1do Begin
      If Not Eof(f)Then ReadLn(f,w) Else w:='';
-     For j:=1 to IMin(Length(w),ngate)do pb^[i*ngate+j-1]:=CharLv(w[j]);
+     For j:=1 to IMin(Length(w),ngate)do pb^[LongInt(i)*ngate+j-1]:=CharLv(w[j]);
     End;
     PolarToGrid(pb,nrad,ngate,rlon,rlat,rng,Frames[NF-1].g);
     FreeMem(pb,SizeOf(TPolar));
@@ -3418,16 +3418,20 @@ Const
 Var
  Seed:LongInt;
 
-Function Rnd(n:Integer):Integer;Begin
- Seed:=(Seed*69069+1)And $7FFFFFFF;
+Function Rnd(n:Integer):Integer;
+Var
+ t:Int64;
+Begin
+ t:=Int64(Seed)*69069+1;
+ Seed:=t And $7FFFFFFF;
  Rnd:=(Seed shr 8)Mod n;
 End;
 
 Function Hash(a,b:LongInt):Real;
 Var
- h:LongInt;
+ h:Int64;
 Begin
- h:=((a*73856093)xor(b*19349663))And $3FF;
+ h:=((Int64(a)*73856093)xor(Int64(b)*19349663))And $3FF;
  Hash:=h/1023;
 End;
 
