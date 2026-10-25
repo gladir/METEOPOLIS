@@ -1,0 +1,10 @@
+; Liste de grilles ESRI ASCII (valeurs en mm/h)
+SOURCE GEOMET
+TITRE Montreal en mm/h (grilles ESRI ASCII)
+PAS 60
+HEURE 18:00
+MMH
+QC_1.ASC
+QC_2.ASC
+QC_3.ASC
+QC_4.ASC
