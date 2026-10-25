@@ -3172,6 +3172,43 @@ Procedure PanBy(dx,dy:Integer);Begin
  DrawMap;
 End;
 
+Function AltKey(k:Char):Boolean;
+Var
+ m:Integer;
+Begin
+ AltKey:=True;
+ m:=-1;
+ Case k of
+  #33:m:=0;  { Alt+F }
+  #31:m:=1;  { Alt+S }
+  #46:m:=2;  { Alt+C }
+  #30:m:=3;  { Alt+A }
+  #24:m:=4;  { Alt+O }
+  #53,#164:m:=5;  { Alt+? }
+  #45,#107:Begin { Alt+X, Alt+F4 }
+   If MenuOpen>=0Then CloseMenu;
+   Quit:=True;
+   Exit;
+  End;
+  Else Begin
+   AltKey:=False;
+   Exit;
+  End;
+ End;
+ If MenuOpen>=0Then Begin
+  MenuOpen:=m;
+  MenuSel:=0;
+  DrawAll;
+  DrawDropdown(m);
+ End
+  Else
+ Begin
+  OpenMenu(m);
+  MenuSel:=0;
+  DrawDropdown(m);
+ End;
+End;
+
 Procedure OnKey;
 Var
  k:Char;
@@ -3181,6 +3218,7 @@ Begin
  If MenuOpen>=0Then Begin
   If k=#0Then Begin
    k:=ReadKey;
+   If AltKey(k)Then Exit;
    m:=MenuOpen;
    Case k of
     #75:Begin If m>0Then Dec(m) Else m:=NbMenu-1;MenuOpen:=m;MenuSel:=0;DrawAll;DrawDropdown(m);End;
@@ -3208,6 +3246,7 @@ Begin
  End;
  If k=#0Then Begin
   k:=ReadKey;
+  If AltKey(k)Then Exit;
   Case k of
    #59:ShowHelp;
    #68:Begin OpenMenu(0);MenuSel:=0;DrawDropdown(0);End;
@@ -3657,7 +3696,8 @@ End;
   --------------------------------------------------------------------------- }
 
 Procedure ShowUsage;Begin
- WriteLn('STORMVIEW - Clone de StormView Radar (radar anime, alertes, foudre) - v1.00');
+ WriteLn('STORMVIEW 1.0 - Cette commande permet de lancer le ',
+         'StormView Radar (radar anime, alertes, foudre).');
  WriteLn;
  WriteLn('Syntaxe : STORMVIEW [fichier ...] [options]');
  WriteLn;
