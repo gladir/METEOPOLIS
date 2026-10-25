@@ -1,6 +1,10 @@
 # METEOPOLIS
 METEOPOLIS - Ensemble de commande écrit en Pascal d'aide sur la météorologie.
 
+Aperçu de la commande STORMVIEW :
+
+<img width="641" height="476" alt="image" src="https://github.com/user-attachments/assets/f708dbd5-fd8a-4ec6-88fb-c7b1b6624341" />
+
 <h2>Liste des fichiers</h2>
 
 Voici la liste des différents fichiers proposés dans METEOPOLIS :
